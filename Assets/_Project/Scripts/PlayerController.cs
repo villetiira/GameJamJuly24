@@ -36,7 +36,7 @@ namespace keijo
         public float sprintSpeed = 10f;
         public float jumpForce = 5f;
         public Animator animator;
-        public Animator armsAnimator;
+        //public Animator armsAnimator;
         bool sprinting = false;
 
         [Header("Camera Settings")]
@@ -62,7 +62,7 @@ namespace keijo
         {
 
             //initialize UI
-            armsAnimator = transform.Find("FirstPersonCamera").GetComponentInChildren<Animator>();
+            //armsAnimator = transform.Find("FirstPersonCamera").GetComponentInChildren<Animator>();
             animator = transform.Find("FullBody").GetComponentInChildren<Animator>();
         }
 
@@ -97,10 +97,10 @@ namespace keijo
 
             SetInputs();
 
-            if (Input.GetMouseButtonDown(0) && !attackInProgress)
+            /*if (Input.GetMouseButtonDown(0) && !attackInProgress)
             {
                 Attack();
-            }
+            }*/
 
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -152,6 +152,15 @@ namespace keijo
 
         void SetInputs()
         {
+            if (characterInputs.SprintDown)
+            {
+                sprinting = true;
+            }
+
+            if (characterInputs.SprintUp)
+            {
+                sprinting = false;
+            }
 
             // Calculate camera direction and rotation on the character plane
             Vector3 cameraPlanarDirection = Vector3.ProjectOnPlane(characterInputs.CameraRotation * Vector3.forward, Vector3.up).normalized;
@@ -188,7 +197,7 @@ namespace keijo
             //set animations
             float currentVelocityMagnitude = sprinting ? moveInputVector.magnitude : moveInputVector.magnitude * 0.5f;
             animator.SetFloat("MoveSpeed", currentVelocityMagnitude);
-            armsAnimator.SetFloat("MoveSpeed", currentVelocityMagnitude);
+            //armsAnimator.SetFloat("MoveSpeed", currentVelocityMagnitude);
 
             float moveSpeed = sprinting ? sprintSpeed : walkSpeed;
             gameObject.transform.position += moveInputVector * moveSpeed * Time.deltaTime;
@@ -197,13 +206,10 @@ namespace keijo
             {
                 gameObject.GetComponentInChildren<Rigidbody>().velocity = Vector3.up * jumpForce;
             }
-
-            //RpcUpdatePositionAndRotation();
         }
 
         void UpdateGroundedStatus()
         {
-            //bool status = Physics.BoxCast(transform.position, boxSize, -Vector3.up, transform.rotation, 0.5f);
             //get the radius of the players capsule collider, and make it a tiny bit smaller than that
             float radius = GetComponent<CapsuleCollider>().radius * 0.9f;
             //get the position (assuming its right at the bottom) and move it up by almost the whole radius
@@ -221,7 +227,7 @@ namespace keijo
             }
             isGrounded = status;
             animator.SetBool("Grounded", status);
-            armsAnimator.SetBool("Grounded", status);
+            //armsAnimator.SetBool("Grounded", status);
         }
 
         void SetLayerAllChildren(Transform root, int layer)
@@ -233,12 +239,12 @@ namespace keijo
             }
         }
 
-        void Attack()
+        /*void Attack()
         {
             attackInProgress = true;
             animator.SetTrigger("SwordSlash");
-            armsAnimator.SetTrigger("SwordSlash");
-        }
+            //armsAnimator.SetTrigger("SwordSlash");
+        }*/
 
 
         public void Interact()
