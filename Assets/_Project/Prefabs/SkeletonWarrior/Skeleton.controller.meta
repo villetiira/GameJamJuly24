@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a8af957c02afd4b48b1563b41aa7eaca
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 210899
+  packageName: Skeleton Warrior / Knight
+  packageVersion: 1.0
+  assetPath: Assets/SkeletonWarrior/DemoScene/Skeleton.controller
+  uploadId: 477355
