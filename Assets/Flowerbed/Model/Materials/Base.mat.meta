@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cbbbc9e14b48c3b4786657e10f780751
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160163
+  packageName: Flowerbed
+  packageVersion: 1.0
+  assetPath: Assets/Flowerbed/Model/Materials/Base.mat
+  uploadId: 347179

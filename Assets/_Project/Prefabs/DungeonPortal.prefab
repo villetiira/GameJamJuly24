@@ -350,6 +350,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82871985399786530, guid: 65e3377535a7162468c722f1fdeb12cc, type: 3}
+      propertyPath: m_Volume
+      value: 0.292
+      objectReference: {fileID: 0}
+    - target: {fileID: 82871985399786530, guid: 65e3377535a7162468c722f1fdeb12cc, type: 3}
+      propertyPath: MaxDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82871985399786530, guid: 65e3377535a7162468c722f1fdeb12cc, type: 3}
+      propertyPath: MinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82871985399786530, guid: 65e3377535a7162468c722f1fdeb12cc, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108898272508430120, guid: 65e3377535a7162468c722f1fdeb12cc, type: 3}
+      propertyPath: m_Range
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114359932479347442, guid: 65e3377535a7162468c722f1fdeb12cc, type: 3}
+      propertyPath: AudioCurve.m_RotationOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 114896420127758368, guid: 65e3377535a7162468c722f1fdeb12cc, type: 3}
       propertyPath: LightCurve.m_RotationOrder
       value: 4

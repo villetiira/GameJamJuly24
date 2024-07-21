@@ -5,8 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/DunGen/Samples/Dungeon Crawler Sample/Dungeon Crawler Sample.unity
     guid: d1143783fc7856f4c833a8a61a2844e6
+  - enabled: 1
+    path: Assets/_Project/Scenes/MainScene.unity
+    guid: 7f7bee99dfead6242b8f9963e8107680
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

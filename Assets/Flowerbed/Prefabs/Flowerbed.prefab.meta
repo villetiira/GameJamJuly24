@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 31f5775cd16314a4eb711a68f4959d04
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160163
+  packageName: Flowerbed
+  packageVersion: 1.0
+  assetPath: Assets/Flowerbed/Prefabs/Flowerbed.prefab
+  uploadId: 347179

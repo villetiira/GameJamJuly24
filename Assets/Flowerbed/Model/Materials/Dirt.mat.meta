@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 165e40590f290d74587cdadb1c1477d0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160163
+  packageName: Flowerbed
+  packageVersion: 1.0
+  assetPath: Assets/Flowerbed/Model/Materials/Dirt.mat
+  uploadId: 347179
