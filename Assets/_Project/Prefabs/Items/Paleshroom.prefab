@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 607349326805285450}
   - component: {fileID: 6582919054057227006}
   - component: {fileID: 2293610993224056273}
+  - component: {fileID: 3756077529008598348}
   m_Layer: 0
   m_Name: Paleshroom
   m_TagString: Untagged
@@ -101,3 +102,24 @@ MonoBehaviour:
   type: Ingredient
   itemName: Paleshroom
   gatherTime: 2
+--- !u!65 &3756077529008598348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694713356116771128}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.69080305, y: 0.6865476, z: 0.96222025}
+  m_Center: {x: 0.02740924, y: -0.025224945, z: 0.39734614}

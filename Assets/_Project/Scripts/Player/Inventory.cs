@@ -11,16 +11,16 @@ public class Inventory : MonoBehaviour
     {
         switch(itemName)
         {
-            case "BlueCap":
+            case "Bluecap":
                 blueCaps++;
                 break;
-            case "GlowBud":
+            case "Glowbud":
                 glowBuds++;
                 break;
             case "Crystal":
                 crystals++;
                 break;
-            case "PaleShroom":
+            case "Paleshroom":
                 paleShrooms++;
                 break;
             default:

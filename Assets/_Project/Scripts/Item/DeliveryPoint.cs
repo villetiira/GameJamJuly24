@@ -14,10 +14,12 @@ namespace keijo {
 
         public override void Interact(GameObject player)
         {
-            int blueCaps = player.GetComponent<Inventory>().blueCaps;
-            int glowBuds = player.GetComponent<Inventory>().glowBuds;
-            int crystals = player.GetComponent<Inventory>().crystals;
-            int paleShrooms = player.GetComponent<Inventory>().paleShrooms;
+            Inventory inventory = player.GetComponent<Inventory>();
+            int blueCaps = inventory.blueCaps;
+            int glowBuds = inventory.glowBuds;
+            int crystals = inventory.crystals;
+            int paleShrooms = inventory.paleShrooms;
+            inventory.ClearInventory();
 
             Debug.Log("Delivered mushrooms: " + blueCaps);
 
