@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using DunGen;
+using UnityEngine.SceneManagement;
 
 namespace keijo
 {
@@ -46,8 +47,7 @@ namespace keijo
 
         void Awake()
         {
-            dungeon.Generator.OnGenerationStatusChanged += OnDungeonGenerationStatusChanged;
-
+            SceneManager.LoadScene(1, LoadSceneMode.Additive);
             DateTime dateTimeCompareTo = new DateTime(2024, 01, 10);
             DateTime dateTimeToday = DateTime.Today;
             seedGeneratorInt = (int)((dateTimeToday - dateTimeCompareTo).TotalDays);
@@ -64,6 +64,9 @@ namespace keijo
             levelSeed = levelRandom.Next(0, 100000000);
             
             dayNumber++;
+            dungeon = FindAnyObjectByType<RuntimeDungeon>();
+            dungeon.Generator.OnGenerationStatusChanged += OnDungeonGenerationStatusChanged;
+
             GenerateTaskList();
             GenerateDungeon();
         }
@@ -242,7 +245,7 @@ namespace keijo
 
         public void EndDay()
         {
-            if(dayNumber == 3)
+            if (dayNumber == 3)
             {
                 if(coins < quota)
                 {
