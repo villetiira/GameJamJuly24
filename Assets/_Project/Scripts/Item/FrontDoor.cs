@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrontDoor : Interactable
+namespace keijo
 {
-    public override void Interact(GameObject player)
+    public class FrontDoor : Interactable
     {
-        Debug.Log("Sorry, day is not over yet");
+        public GameManager gameManager;
+        public override void Interact(GameObject player)
+        {
+            gameManager.EndDay();
+        }
     }
 }
