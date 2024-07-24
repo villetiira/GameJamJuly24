@@ -24,19 +24,20 @@ namespace keijo
         public RuntimeDungeon dungeon;
         public int seedGeneratorInt;
         public System.Random levelRandom;
+        public Transform playerTransform;
 
         [Header("Level settings")]
         public int levelSeed;
         public int requiredMaterials = 5;
-        public TaskList taskList;
+        public TaskList taskList = new TaskList();
         public int roundNumber = 0;
         public int dayNumber = 0;
         public int quota = 100;
         public int coins = 0;
         public float dungeonMultiplier = 2;
 
-        List<GameObject> spawnedItems = new List<GameObject>();
-        List<GameObject> enemies = new List<GameObject>();
+        public List<GameObject> spawnedItems = new List<GameObject>();
+        public List<GameObject> enemies = new List<GameObject>();
 
         [Header("Item values")]
         public int blueCapValue = 4;
@@ -45,9 +46,12 @@ namespace keijo
         public int paleShroomValue = 8;
         public float taskBonus = 0.5f;
 
+        [Header("Enemies")]
+        public GameObject enemyPrefab;
+        public int enemyAmountAtStart = 1;
+
         void Awake()
         {
-            SceneManager.LoadScene(1, LoadSceneMode.Additive);
             DateTime dateTimeCompareTo = new DateTime(2024, 01, 10);
             DateTime dateTimeToday = DateTime.Today;
             seedGeneratorInt = (int)((dateTimeToday - dateTimeCompareTo).TotalDays);
@@ -56,16 +60,17 @@ namespace keijo
         private void Start()
         {
             StartLevel();
+            dungeon = FindAnyObjectByType<RuntimeDungeon>();
+            dungeon.Generator.OnGenerationStatusChanged += OnDungeonGenerationStatusChanged;
         }
 
         public void StartLevel()
         {
+            //SceneManager.LoadScene(1, LoadSceneMode.Additive);
             levelRandom = new System.Random(seedGeneratorInt);
             levelSeed = levelRandom.Next(0, 100000000);
             
             dayNumber++;
-            dungeon = FindAnyObjectByType<RuntimeDungeon>();
-            dungeon.Generator.OnGenerationStatusChanged += OnDungeonGenerationStatusChanged;
 
             GenerateTaskList();
             GenerateDungeon();
@@ -90,7 +95,15 @@ namespace keijo
             Debug.Log("paleShroom " + paleShroomCount);
             Debug.Log("itemCount " + itemCount);
 
-            taskList = new TaskList();
+            Debug.Log("test " + taskList.blueCapCount);
+
+            // clear previous day
+            taskList.blueCapCount = 0;
+            taskList.glowBudCount = 0;
+            taskList.crystalCount = 0;
+            taskList.paleShroomCount = 0;
+
+            // add new tasks
             taskList.blueCapCount = blueCapCount;
             taskList.glowBudCount = glowBudCount;
             taskList.crystalCount = crystalCount;
@@ -106,9 +119,9 @@ namespace keijo
 
         public void OnDungeonGenerationStatusChanged(DungeonGenerator generator, GenerationStatus status)
         {
-
             if(status == GenerationStatus.Complete)
             {
+                Debug.Log("Triggered rebuild");
                 SpawnItems();
 
                 SpawnEnemies();
@@ -119,15 +132,8 @@ namespace keijo
         {
             Debug.Log("Spawning Items!");
             RandomLootSpawner[] spawnerList = FindObjectsByType<RandomLootSpawner>(0);
-            Debug.Log("SpawnPoint1" + spawnerList[0].transform.position);
-            Debug.Log("SpawnPoint2" + spawnerList[1].transform.position);
-            Debug.Log("SpawnPoint3" + spawnerList[2].transform.position);
 
             Shuffle(spawnerList);
-
-            Debug.Log("SpawnPoint1" + spawnerList[0].transform.position);
-            Debug.Log("SpawnPoint2" + spawnerList[1].transform.position);
-            Debug.Log("SpawnPoint3" + spawnerList[2].transform.position);
 
             for (int i = 0; i < taskList.blueCapCount; i++)
             {
@@ -169,7 +175,7 @@ namespace keijo
                 item.transform.position = spawner.transform.position;
                 spawnedItems.Add(item);
             }
-            Debug.Log("Added items from tasklist");
+            Debug.Log("Added items from tasklist " + spawnedItems.Count);
             // add some additional items too
             for(int i=0; i < requiredMaterials * 0.5; i++)
             {
@@ -240,7 +246,27 @@ namespace keijo
 
         private void SpawnEnemies()
         {
+            EnemySpawnPoint[] spawnerList = FindObjectsByType<EnemySpawnPoint>(0);
+            Shuffle(spawnerList);
 
+            for (int i=0; i < enemyAmountAtStart; i++)
+            {
+                GameObject enemy = Instantiate(enemyPrefab);
+                enemy.GetComponent<EnemyAI>().WarpToPosition(spawnerList[i].transform.position);
+                enemy.GetComponent<EnemyAI>().SetTargetPlayer(playerTransform);
+                enemies.Add(enemy);
+            }
+        }
+
+        public void Shuffle(EnemySpawnPoint[] spawnerList)
+        {
+            for (int t = 0; t < spawnerList.Length; t++)
+            {
+                EnemySpawnPoint tmp = spawnerList[t];
+                int r = levelRandom.Next(t, spawnerList.Length);
+                spawnerList[t] = spawnerList[r];
+                spawnerList[r] = tmp;
+            }
         }
 
         public void EndDay()
@@ -255,6 +281,7 @@ namespace keijo
                 quota = (int)Mathf.Floor(quota + quota * 0.33f);
                 dungeonMultiplier += 0.2f;
                 requiredMaterials++;
+                enemyAmountAtStart++;
                 dayNumber = 0;
             }
 
@@ -272,15 +299,19 @@ namespace keijo
             // destroy leftover items and enemies
             foreach (GameObject item in spawnedItems)
             {
-                if (item != null) Destroy(item);
+                Debug.Log(item);
+                Destroy(item);
             }
+            Debug.Log(spawnedItems.Count);
             spawnedItems.Clear();
+            Debug.Log(spawnedItems.Count);
 
             foreach (GameObject enemy in enemies)
             {
-                if (enemy) Destroy(enemy);
+                if (enemy != null) Destroy(enemy);
             }
             enemies.Clear();
+            Debug.Log(enemies.Count);
 
             // if quota met, start next level
             StartLevel();

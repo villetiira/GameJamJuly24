@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 116ee6afc5d04629a0d34bd268f10c03
+AssetOrigin:
+  serializedVersion: 1
+  productId: 178653
+  packageName: Modular Fantasy Stylized Human Female
+  packageVersion: 2.3.1
+  assetPath: Assets/StylizedCharacter/Animations/Character/Human/Female/A_Hu_F_BasePack.fbx
+  uploadId: 658918
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -16,8 +23,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Combat_1H_Ready' has import animation warnings
       that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
@@ -64,30 +69,29 @@ ModelImporter:
       warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
       animation that will be discarded.\n\t'index_01_r' has translation animation
       that will be discarded.\n\t'index_02_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'middle_02_r'
-      has translation animation that will be discarded.\n\t'pinky_01_r' has translation
-      animation that will be discarded.\n\t'ring_01_r' has translation animation
-      that will be discarded.\n\t'index_01_l' has translation animation that will
-      be discarded.\n\t'index_02_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'middle_02_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'pinky_02_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'ring_02_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\t'thumb_02_l' has translation animation
-      that will be discarded.\n\t'thumb_03_l' has translation animation that will
-      be discarded.\n\nClip 'Combat_1H_Attack_Off' has import animation warnings
-      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
       be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
       has translation animation that will be discarded.\n\t'ring_01_r' has translation
       animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Combat_1H_Attack_Off01' has import
-      animation warnings that might lower retargeting quality:\n\t'thumb_01_r' has
-      translation animation that will be discarded.\n\t'index_01_r' has translation
+      that will be discarded.\n\t'index_02_l' has translation animation that will
+      be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'middle_02_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'pinky_02_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'ring_02_l' has translation animation that will be discarded.\n\t'thumb_01_l'
+      has translation animation that will be discarded.\n\t'thumb_02_l' has translation
+      animation that will be discarded.\n\t'thumb_03_l' has translation animation
+      that will be discarded.\n\nClip 'Combat_1H_Attack_Off' has import animation
+      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
+      animation that will be discarded.\n\t'index_01_r' has translation animation
+      that will be discarded.\n\t'middle_01_r' has translation animation that will
+      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
+      has translation animation that will be discarded.\n\t'index_01_l' has translation
+      animation that will be discarded.\n\t'middle_01_l' has translation animation
+      that will be discarded.\n\t'pinky_01_l' has translation animation that will
+      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
+      has translation animation that will be discarded.\n\nClip 'Combat_1H_Attack_Off01'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
       animation that will be discarded.\n\t'middle_01_r' has translation animation
       that will be discarded.\n\t'pinky_01_r' has translation animation that will
       be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
@@ -416,37 +420,34 @@ ModelImporter:
       animation that will be discarded.\n\t'pinky_01_r' has translation animation
       that will be discarded.\n\t'pinky_02_r' has translation animation that will
       be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'ring_02_r'
-      has translation animation that will be discarded.\n\t'ring_03_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'index_02_l' has translation animation that will
-      be discarded.\n\t'index_03_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'middle_02_l' has translation
-      animation that will be discarded.\n\t'middle_03_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'pinky_02_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'ring_02_l' has translation
-      animation that will be discarded.\n\t'thumb_01_l' has translation animation
-      that will be discarded.\n\t'thumb_03_l' has translation animation that will
-      be discarded.\n\nClip 'Run_2H_Backwards' has import animation warnings that
-      might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Run_2H_Left' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
       has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Run_2H_Right' has
-      import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      animation that will be discarded.\n\t'index_02_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'middle_02_l' has translation animation that will be discarded.\n\t'pinky_01_l'
+      has translation animation that will be discarded.\n\t'pinky_02_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'ring_02_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\t'thumb_03_l'
+      has translation animation that will be discarded.\n\nClip 'Run_2H_Backwards'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Run_2H_Left' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Run_2H_Right' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
       has translation animation that will be discarded.\n\t'index_01_r' has translation
       animation that will be discarded.\n\t'middle_01_r' has translation animation
       that will be discarded.\n\t'pinky_01_r' has translation animation that will
@@ -854,23 +855,150 @@ ModelImporter:
       has translation animation that will be discarded.\n\t'thumb_01_l' has translation
       animation that will be discarded.\n\nClip 'Combat_2HL_Ready' has import animation
       warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
+      animation that will be discarded.\n\t'index_01_r' has translation animation
+      that will be discarded.\n\t'index_03_r' has translation animation that will
+      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'middle_02_r'
+      has translation animation that will be discarded.\n\t'middle_03_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'pinky_02_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'ring_02_r'
+      has translation animation that will be discarded.\n\t'ring_03_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'index_02_l' has translation animation that will
+      be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'middle_02_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'ring_02_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\t'thumb_03_l'
+      has translation animation that will be discarded.\n\nClip 'Combat_2HL_Attack'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'thumb_02_r' has translation
       animation that will be discarded.\n\t'thumb_03_r' has translation animation
       that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'index_03_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'middle_02_r' has translation animation
+      that will be discarded.\n\t'middle_03_r' has translation animation that will
+      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'pinky_02_r'
+      has translation animation that will be discarded.\n\t'pinky_03_r' has translation
+      animation that will be discarded.\n\t'ring_01_r' has translation animation
+      that will be discarded.\n\t'ring_02_r' has translation animation that will
+      be discarded.\n\t'ring_03_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'index_02_l' has translation
+      animation that will be discarded.\n\t'index_03_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'middle_02_l' has translation animation that will be discarded.\n\t'middle_03_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'pinky_02_l' has translation animation
+      that will be discarded.\n\t'pinky_03_l' has translation animation that will
+      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'ring_02_l'
+      has translation animation that will be discarded.\n\t'ring_03_l' has translation
+      animation that will be discarded.\n\t'thumb_01_l' has translation animation
+      that will be discarded.\n\t'thumb_02_l' has translation animation that will
+      be discarded.\n\t'thumb_03_l' has translation animation that will be discarded.\n\nClip
+      'Combat_2HL_Attack01' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'thumb_02_r'
+      has translation animation that will be discarded.\n\t'thumb_03_r' has translation
+      animation that will be discarded.\n\t'index_01_r' has translation animation
+      that will be discarded.\n\t'index_02_r' has translation animation that will
       be discarded.\n\t'index_03_r' has translation animation that will be discarded.\n\t'middle_01_r'
       has translation animation that will be discarded.\n\t'middle_02_r' has translation
       animation that will be discarded.\n\t'middle_03_r' has translation animation
       that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'ring_02_r' has translation
-      animation that will be discarded.\n\t'ring_03_r' has translation animation
-      that will be discarded.\n\t'index_01_l' has translation animation that will
-      be discarded.\n\t'index_02_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'middle_02_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'pinky_03_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'ring_02_r' has translation animation
+      that will be discarded.\n\t'ring_03_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'index_02_l'
+      has translation animation that will be discarded.\n\t'index_03_l' has translation
+      animation that will be discarded.\n\t'middle_01_l' has translation animation
+      that will be discarded.\n\t'middle_02_l' has translation animation that will
+      be discarded.\n\t'middle_03_l' has translation animation that will be discarded.\n\t'pinky_01_l'
+      has translation animation that will be discarded.\n\t'pinky_02_l' has translation
+      animation that will be discarded.\n\t'pinky_03_l' has translation animation
       that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'ring_02_l' has translation animation that will be discarded.\n\t'thumb_01_l'
+      be discarded.\n\t'ring_02_l' has translation animation that will be discarded.\n\t'ring_03_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n\t'thumb_02_l' has translation animation
+      that will be discarded.\n\t'thumb_03_l' has translation animation that will
+      be discarded.\n\nClip 'Combat_2HL_AttackSpecial' has import animation warnings
+      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'thumb_02_r' has translation animation that will
+      be discarded.\n\t'thumb_03_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'index_02_r' has translation
+      animation that will be discarded.\n\t'index_03_r' has translation animation
+      that will be discarded.\n\t'middle_01_r' has translation animation that will
+      be discarded.\n\t'middle_02_r' has translation animation that will be discarded.\n\t'middle_03_r'
+      has translation animation that will be discarded.\n\t'pinky_01_r' has translation
+      animation that will be discarded.\n\t'pinky_02_r' has translation animation
+      that will be discarded.\n\t'pinky_03_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'ring_02_r'
+      has translation animation that will be discarded.\n\t'ring_03_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'index_02_l' has translation animation that will
+      be discarded.\n\t'index_03_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'middle_02_l' has translation
+      animation that will be discarded.\n\t'middle_03_l' has translation animation
+      that will be discarded.\n\t'pinky_01_l' has translation animation that will
+      be discarded.\n\t'pinky_02_l' has translation animation that will be discarded.\n\t'pinky_03_l'
+      has translation animation that will be discarded.\n\t'ring_01_l' has translation
+      animation that will be discarded.\n\t'ring_02_l' has translation animation
+      that will be discarded.\n\t'ring_03_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\t'thumb_02_l'
       has translation animation that will be discarded.\n\t'thumb_03_l' has translation
-      animation that will be discarded.\n\nClip 'Combat_2HL_Attack' has import animation
+      animation that will be discarded.\n\t'eye_l' has translation animation that
+      will be discarded.\n\t'eye_r' has translation animation that will be discarded.\n\nClip
+      'Combat_2HL_Attack_Base' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'thumb_02_r'
+      has translation animation that will be discarded.\n\t'thumb_03_r' has translation
+      animation that will be discarded.\n\t'index_01_r' has translation animation
+      that will be discarded.\n\t'index_02_r' has translation animation that will
+      be discarded.\n\t'index_03_r' has translation animation that will be discarded.\n\t'middle_01_r'
+      has translation animation that will be discarded.\n\t'middle_02_r' has translation
+      animation that will be discarded.\n\t'middle_03_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'pinky_03_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'ring_02_r' has translation animation
+      that will be discarded.\n\t'ring_03_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'index_02_l'
+      has translation animation that will be discarded.\n\t'index_03_l' has translation
+      animation that will be discarded.\n\t'middle_01_l' has translation animation
+      that will be discarded.\n\t'middle_02_l' has translation animation that will
+      be discarded.\n\t'middle_03_l' has translation animation that will be discarded.\n\t'pinky_01_l'
+      has translation animation that will be discarded.\n\t'pinky_02_l' has translation
+      animation that will be discarded.\n\t'pinky_03_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'ring_02_l' has translation animation that will be discarded.\n\t'ring_03_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n\t'thumb_02_l' has translation animation
+      that will be discarded.\n\t'thumb_03_l' has translation animation that will
+      be discarded.\n\nClip 'Combat_2HL_Attack_Base01' has import animation warnings
+      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'thumb_02_r' has translation animation that will
+      be discarded.\n\t'thumb_03_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'index_02_r' has translation
+      animation that will be discarded.\n\t'index_03_r' has translation animation
+      that will be discarded.\n\t'middle_01_r' has translation animation that will
+      be discarded.\n\t'middle_02_r' has translation animation that will be discarded.\n\t'middle_03_r'
+      has translation animation that will be discarded.\n\t'pinky_01_r' has translation
+      animation that will be discarded.\n\t'pinky_02_r' has translation animation
+      that will be discarded.\n\t'pinky_03_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'ring_02_r'
+      has translation animation that will be discarded.\n\t'ring_03_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'index_02_l' has translation animation that will
+      be discarded.\n\t'index_03_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'middle_02_l' has translation
+      animation that will be discarded.\n\t'middle_03_l' has translation animation
+      that will be discarded.\n\t'pinky_01_l' has translation animation that will
+      be discarded.\n\t'pinky_02_l' has translation animation that will be discarded.\n\t'pinky_03_l'
+      has translation animation that will be discarded.\n\t'ring_01_l' has translation
+      animation that will be discarded.\n\t'ring_02_l' has translation animation
+      that will be discarded.\n\t'ring_03_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\t'thumb_02_l'
+      has translation animation that will be discarded.\n\t'thumb_03_l' has translation
+      animation that will be discarded.\n\nClip 'Combat_2HL_Hit' has import animation
       warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
       animation that will be discarded.\n\t'thumb_02_r' has translation animation
       that will be discarded.\n\t'thumb_03_r' has translation animation that will
@@ -895,199 +1023,71 @@ ModelImporter:
       animation that will be discarded.\n\t'ring_03_l' has translation animation
       that will be discarded.\n\t'thumb_01_l' has translation animation that will
       be discarded.\n\t'thumb_02_l' has translation animation that will be discarded.\n\t'thumb_03_l'
-      has translation animation that will be discarded.\n\nClip 'Combat_2HL_Attack01'
+      has translation animation that will be discarded.\n\nClip 'Combat_2HL_Dodge'
       has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'thumb_02_r' has translation
-      animation that will be discarded.\n\t'thumb_03_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'index_03_r'
-      has translation animation that will be discarded.\n\t'middle_01_r' has translation
-      animation that will be discarded.\n\t'middle_02_r' has translation animation
-      that will be discarded.\n\t'middle_03_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'pinky_02_r'
-      has translation animation that will be discarded.\n\t'pinky_03_r' has translation
-      animation that will be discarded.\n\t'ring_01_r' has translation animation
-      that will be discarded.\n\t'ring_02_r' has translation animation that will
-      be discarded.\n\t'ring_03_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'index_02_l' has translation
-      animation that will be discarded.\n\t'index_03_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'middle_02_l' has translation animation that will be discarded.\n\t'middle_03_l'
-      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
-      animation that will be discarded.\n\t'pinky_02_l' has translation animation
-      that will be discarded.\n\t'pinky_03_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'ring_02_l'
-      has translation animation that will be discarded.\n\t'ring_03_l' has translation
-      animation that will be discarded.\n\t'thumb_01_l' has translation animation
-      that will be discarded.\n\t'thumb_02_l' has translation animation that will
-      be discarded.\n\t'thumb_03_l' has translation animation that will be discarded.\n\nClip
-      'Combat_2HL_AttackSpecial' has import animation warnings that might lower retargeting
-      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'thumb_02_r'
-      has translation animation that will be discarded.\n\t'thumb_03_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'index_02_r' has translation animation that will
-      be discarded.\n\t'index_03_r' has translation animation that will be discarded.\n\t'middle_01_r'
-      has translation animation that will be discarded.\n\t'middle_02_r' has translation
-      animation that will be discarded.\n\t'middle_03_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'pinky_03_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'ring_02_r' has translation animation
-      that will be discarded.\n\t'ring_03_r' has translation animation that will
-      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'index_02_l'
-      has translation animation that will be discarded.\n\t'index_03_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'middle_02_l' has translation animation that will
-      be discarded.\n\t'middle_03_l' has translation animation that will be discarded.\n\t'pinky_01_l'
-      has translation animation that will be discarded.\n\t'pinky_02_l' has translation
-      animation that will be discarded.\n\t'pinky_03_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'ring_02_l' has translation animation that will be discarded.\n\t'ring_03_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\t'thumb_02_l' has translation animation
-      that will be discarded.\n\t'thumb_03_l' has translation animation that will
-      be discarded.\n\t'eye_l' has translation animation that will be discarded.\n\t'eye_r'
-      has translation animation that will be discarded.\n\nClip 'Combat_2HL_Attack_Base'
-      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'thumb_02_r' has translation
-      animation that will be discarded.\n\t'thumb_03_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'index_03_r'
-      has translation animation that will be discarded.\n\t'middle_01_r' has translation
-      animation that will be discarded.\n\t'middle_02_r' has translation animation
-      that will be discarded.\n\t'middle_03_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'pinky_02_r'
-      has translation animation that will be discarded.\n\t'pinky_03_r' has translation
-      animation that will be discarded.\n\t'ring_01_r' has translation animation
-      that will be discarded.\n\t'ring_02_r' has translation animation that will
-      be discarded.\n\t'ring_03_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'index_02_l' has translation
-      animation that will be discarded.\n\t'index_03_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'middle_02_l' has translation animation that will be discarded.\n\t'middle_03_l'
-      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
-      animation that will be discarded.\n\t'pinky_02_l' has translation animation
-      that will be discarded.\n\t'pinky_03_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'ring_02_l'
-      has translation animation that will be discarded.\n\t'ring_03_l' has translation
-      animation that will be discarded.\n\t'thumb_01_l' has translation animation
-      that will be discarded.\n\t'thumb_02_l' has translation animation that will
-      be discarded.\n\t'thumb_03_l' has translation animation that will be discarded.\n\nClip
-      'Combat_2HL_Attack_Base01' has import animation warnings that might lower retargeting
-      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'thumb_02_r'
-      has translation animation that will be discarded.\n\t'thumb_03_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'index_02_r' has translation animation that will
-      be discarded.\n\t'index_03_r' has translation animation that will be discarded.\n\t'middle_01_r'
-      has translation animation that will be discarded.\n\t'middle_02_r' has translation
-      animation that will be discarded.\n\t'middle_03_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'pinky_03_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'ring_02_r' has translation animation
-      that will be discarded.\n\t'ring_03_r' has translation animation that will
-      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'index_02_l'
-      has translation animation that will be discarded.\n\t'index_03_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'middle_02_l' has translation animation that will
-      be discarded.\n\t'middle_03_l' has translation animation that will be discarded.\n\t'pinky_01_l'
-      has translation animation that will be discarded.\n\t'pinky_02_l' has translation
-      animation that will be discarded.\n\t'pinky_03_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'ring_02_l' has translation animation that will be discarded.\n\t'ring_03_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\t'thumb_02_l' has translation animation
-      that will be discarded.\n\t'thumb_03_l' has translation animation that will
-      be discarded.\n\nClip 'Combat_2HL_Hit' has import animation warnings that might
-      lower retargeting quality:\n\t'thumb_01_r' has translation animation that will
-      be discarded.\n\t'thumb_02_r' has translation animation that will be discarded.\n\t'thumb_03_r'
       has translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'index_02_r' has translation animation
-      that will be discarded.\n\t'index_03_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'middle_02_r'
-      has translation animation that will be discarded.\n\t'middle_03_r' has translation
-      animation that will be discarded.\n\t'pinky_01_r' has translation animation
-      that will be discarded.\n\t'pinky_02_r' has translation animation that will
-      be discarded.\n\t'pinky_03_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'ring_02_r' has translation
-      animation that will be discarded.\n\t'ring_03_r' has translation animation
-      that will be discarded.\n\t'index_01_l' has translation animation that will
-      be discarded.\n\t'index_02_l' has translation animation that will be discarded.\n\t'index_03_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'middle_02_l' has translation animation
-      that will be discarded.\n\t'middle_03_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'pinky_02_l'
-      has translation animation that will be discarded.\n\t'pinky_03_l' has translation
-      animation that will be discarded.\n\t'ring_01_l' has translation animation
-      that will be discarded.\n\t'ring_02_l' has translation animation that will
-      be discarded.\n\t'ring_03_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\t'thumb_02_l' has translation
-      animation that will be discarded.\n\t'thumb_03_l' has translation animation
-      that will be discarded.\n\nClip 'Combat_2HL_Dodge' has import animation warnings
-      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'index_03_r' has translation animation that will be discarded.\n\t'middle_01_r'
-      has translation animation that will be discarded.\n\t'middle_02_r' has translation
-      animation that will be discarded.\n\t'middle_03_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'ring_02_r' has translation
-      animation that will be discarded.\n\t'ring_03_r' has translation animation
-      that will be discarded.\n\t'index_01_l' has translation animation that will
-      be discarded.\n\t'index_02_l' has translation animation that will be discarded.\n\t'index_03_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'middle_02_l' has translation animation
-      that will be discarded.\n\t'middle_03_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'pinky_02_l'
-      has translation animation that will be discarded.\n\t'ring_01_l' has translation
-      animation that will be discarded.\n\t'ring_02_l' has translation animation
-      that will be discarded.\n\t'ring_03_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\t'thumb_02_l'
-      has translation animation that will be discarded.\n\t'thumb_03_l' has translation
-      animation that will be discarded.\n\nClip 'Combat_Bow_Ready' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has scale
-      animation that will be discarded.\n\nClip 'Combat_Bow_Load' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has scale
-      animation that will be discarded.\n\nClip 'Combat_Bow_Attack' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has scale
-      animation that will be discarded.\n\nClip 'Combat_Bow_Attack01' has import
-      animation warnings that might lower retargeting quality:\n\t'thumb_01_r' has
-      translation animation that will be discarded.\n\t'index_01_r' has translation
       animation that will be discarded.\n\t'index_03_r' has translation animation
       that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
+      be discarded.\n\t'middle_02_r' has translation animation that will be discarded.\n\t'middle_03_r'
+      has translation animation that will be discarded.\n\t'pinky_01_r' has translation
+      animation that will be discarded.\n\t'pinky_02_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'ring_02_r' has translation animation that will be discarded.\n\t'ring_03_r'
       has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has scale
-      animation that will be discarded.\n\nClip 'Combat_Bow_AttackSpecial' has import
-      animation warnings that might lower retargeting quality:\n\t'thumb_01_r' has
-      translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'index_02_l' has translation animation
+      that will be discarded.\n\t'index_03_l' has translation animation that will
+      be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'middle_02_l'
+      has translation animation that will be discarded.\n\t'middle_03_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'pinky_02_l' has translation animation that will
+      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'ring_02_l'
+      has translation animation that will be discarded.\n\t'ring_03_l' has translation
+      animation that will be discarded.\n\t'thumb_01_l' has translation animation
+      that will be discarded.\n\t'thumb_02_l' has translation animation that will
+      be discarded.\n\t'thumb_03_l' has translation animation that will be discarded.\n\nClip
+      'Combat_Bow_Ready' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has scale animation that will be discarded.\n\nClip
+      'Combat_Bow_Load' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has scale animation that will be discarded.\n\nClip
+      'Combat_Bow_Attack' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has scale animation that will be discarded.\n\nClip
+      'Combat_Bow_Attack01' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'index_03_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
+      has scale animation that will be discarded.\n\nClip 'Combat_Bow_AttackSpecial'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
       animation that will be discarded.\n\t'index_03_r' has translation animation
       that will be discarded.\n\t'middle_01_r' has translation animation that will
       be discarded.\n\t'middle_03_r' has translation animation that will be discarded.\n\t'pinky_01_r'
@@ -1714,188 +1714,9 @@ ModelImporter:
       be discarded.\n\t'ring_02_r' has translation animation that will be discarded.\n\t'ring_03_r'
       has translation animation that will be discarded.\n\t'index_03_l' has translation
       animation that will be discarded.\n\t'middle_03_l' has translation animation
-      that will be discarded.\n\t'pinky_02_l' has translation animation that will
-      be discarded.\n\t'pinky_03_l' has translation animation that will be discarded.\n\t'ring_03_l'
-      has translation animation that will be discarded.\n\nClip 'Emote_Kneel_End'
-      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'thumb_02_r' has translation
-      animation that will be discarded.\n\t'thumb_03_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'index_03_r'
-      has translation animation that will be discarded.\n\t'middle_01_r' has translation
-      animation that will be discarded.\n\t'middle_02_r' has translation animation
-      that will be discarded.\n\t'middle_03_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'pinky_02_r'
-      has translation animation that will be discarded.\n\t'pinky_03_r' has translation
-      animation that will be discarded.\n\t'ring_01_r' has translation animation
-      that will be discarded.\n\t'ring_02_r' has translation animation that will
-      be discarded.\n\t'ring_03_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'index_02_l' has translation
-      animation that will be discarded.\n\t'index_03_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'middle_02_l' has translation animation that will be discarded.\n\t'middle_03_l'
-      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
-      animation that will be discarded.\n\t'pinky_02_l' has translation animation
       that will be discarded.\n\t'pinky_03_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'ring_02_l'
-      has translation animation that will be discarded.\n\t'ring_03_l' has translation
-      animation that will be discarded.\n\t'thumb_01_l' has translation animation
-      that will be discarded.\n\nClip 'Emote_Read_Start' has import animation warnings
-      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Emote_Read_End' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Emote_SitGround_Start'
-      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Emote_SitGround_End' has import animation warnings that might lower retargeting
-      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
-      has translation animation that will be discarded.\n\t'middle_01_r' has translation
-      animation that will be discarded.\n\t'pinky_01_r' has translation animation
-      that will be discarded.\n\t'ring_01_r' has translation animation that will
-      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
-      animation that will be discarded.\n\t'ring_01_l' has translation animation
-      that will be discarded.\n\t'thumb_01_l' has translation animation that will
-      be discarded.\n\nClip 'Emote_SitChair_Start' has import animation warnings
-      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Emote_SitChair_Loop' has import
-      animation warnings that might lower retargeting quality:\n\t'index_01_l' has
-      translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\nClip 'Emote_SitChair_End' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Emote_Sleep_Start'
-      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Emote_Sleep_End' has import animation warnings that might lower retargeting
-      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
-      has translation animation that will be discarded.\n\t'index_02_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'middle_02_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'pinky_02_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'ring_02_r' has translation animation
-      that will be discarded.\n\t'index_01_l' has translation animation that will
-      be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'pinky_01_l'
-      has translation animation that will be discarded.\n\t'ring_01_l' has translation
-      animation that will be discarded.\n\t'thumb_01_l' has translation animation
-      that will be discarded.\n\nClip 'Emote_Use_Start' has import animation warnings
-      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Emote_Use_Loop' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Emote_Use_End' has
-      import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Combat_Unarmed_Ready' has import animation warnings that might lower retargeting
-      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
-      has translation animation that will be discarded.\n\t'middle_01_r' has translation
-      animation that will be discarded.\n\t'pinky_01_r' has translation animation
-      that will be discarded.\n\t'ring_01_r' has translation animation that will
-      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'middle_03_l' has scale
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Combat_Unarmed_Attack' has import animation warnings that might lower retargeting
-      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
-      has translation animation that will be discarded.\n\t'middle_01_r' has translation
-      animation that will be discarded.\n\t'pinky_01_r' has translation animation
-      that will be discarded.\n\t'ring_01_r' has translation animation that will
-      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
-      animation that will be discarded.\n\t'ring_01_l' has translation animation
-      that will be discarded.\n\t'thumb_01_l' has translation animation that will
-      be discarded.\n\nClip 'Combat_Unarmed_Attack01' has import animation warnings
-      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Combat_Unarmed_Hit' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Combat_Unarmed_Dodge'
-      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Combat_Knockdown' has import animation warnings that might lower retargeting
+      be discarded.\n\t'ring_03_l' has translation animation that will be discarded.\n\nClip
+      'Emote_Kneel_End' has import animation warnings that might lower retargeting
       quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'thumb_02_r'
       has translation animation that will be discarded.\n\t'thumb_03_r' has translation
       animation that will be discarded.\n\t'index_01_r' has translation animation
@@ -1914,21 +1735,11 @@ ModelImporter:
       that will be discarded.\n\t'middle_02_l' has translation animation that will
       be discarded.\n\t'middle_03_l' has translation animation that will be discarded.\n\t'pinky_01_l'
       has translation animation that will be discarded.\n\t'pinky_02_l' has translation
-      animation that will be discarded.\n\t'ring_01_l' has translation animation
-      that will be discarded.\n\t'ring_02_l' has translation animation that will
-      be discarded.\n\t'ring_03_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\t'thumb_02_l' has translation
-      animation that will be discarded.\n\t'thumb_03_l' has translation animation
-      that will be discarded.\n\nClip 'Walk_Forward' has import animation warnings
-      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
+      animation that will be discarded.\n\t'pinky_03_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'ring_02_l' has translation animation that will be discarded.\n\t'ring_03_l'
       has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Walk_Backwards' has import animation
+      animation that will be discarded.\n\nClip 'Emote_Read_Start' has import animation
       warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
       animation that will be discarded.\n\t'index_01_r' has translation animation
       that will be discarded.\n\t'middle_01_r' has translation animation that will
@@ -1937,53 +1748,7 @@ ModelImporter:
       animation that will be discarded.\n\t'middle_01_l' has translation animation
       that will be discarded.\n\t'pinky_01_l' has translation animation that will
       be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Walk_Left' has import
-      animation warnings that might lower retargeting quality:\n\t'thumb_01_r' has
-      translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Walk_Right' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Walk_ForwardLeft' has import animation warnings that might lower retargeting
-      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
-      has translation animation that will be discarded.\n\t'middle_01_r' has translation
-      animation that will be discarded.\n\t'pinky_01_r' has translation animation
-      that will be discarded.\n\t'ring_01_r' has translation animation that will
-      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
-      animation that will be discarded.\n\t'ring_01_l' has translation animation
-      that will be discarded.\n\t'thumb_01_l' has translation animation that will
-      be discarded.\n\nClip 'Walk_ForwardRight' has import animation warnings that
-      might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Walk_BackwardLeft' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'middle_01_r' has translation animation that will
-      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Walk_BackwardRight'
+      has translation animation that will be discarded.\n\nClip 'Emote_Read_End'
       has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
       has translation animation that will be discarded.\n\t'index_01_r' has translation
       animation that will be discarded.\n\t'middle_01_r' has translation animation
@@ -1993,25 +1758,7 @@ ModelImporter:
       animation that will be discarded.\n\t'pinky_01_l' has translation animation
       that will be discarded.\n\t'ring_01_l' has translation animation that will
       be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Idle02' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Idle_Hit' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
-      has translation animation that will be discarded.\n\t'index_01_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
-      has translation animation that will be discarded.\n\t'middle_01_l' has translation
-      animation that will be discarded.\n\t'pinky_01_l' has translation animation
-      that will be discarded.\n\t'ring_01_l' has translation animation that will
-      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Idle_StepLeft' has import animation warnings that might lower retargeting
+      'Emote_SitGround_Start' has import animation warnings that might lower retargeting
       quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
       has translation animation that will be discarded.\n\t'middle_01_r' has translation
       animation that will be discarded.\n\t'pinky_01_r' has translation animation
@@ -2020,7 +1767,78 @@ ModelImporter:
       has translation animation that will be discarded.\n\t'pinky_01_l' has translation
       animation that will be discarded.\n\t'ring_01_l' has translation animation
       that will be discarded.\n\t'thumb_01_l' has translation animation that will
-      be discarded.\n\nClip 'Idle_StepRight' has import animation warnings that might
+      be discarded.\n\nClip 'Emote_SitGround_End' has import animation warnings that
+      might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n\nClip 'Emote_SitChair_Start' has import
+      animation warnings that might lower retargeting quality:\n\t'thumb_01_r' has
+      translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Emote_SitChair_Loop' has import animation warnings that might lower retargeting
+      quality:\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\nClip 'Emote_SitChair_End'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Emote_Sleep_Start' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\nClip 'Emote_Sleep_End' has import animation warnings that
+      might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'middle_01_r'
+      has translation animation that will be discarded.\n\t'middle_02_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'pinky_02_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'ring_02_r'
+      has translation animation that will be discarded.\n\t'index_01_l' has translation
+      animation that will be discarded.\n\t'middle_01_l' has translation animation
+      that will be discarded.\n\t'pinky_01_l' has translation animation that will
+      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
+      has translation animation that will be discarded.\n\nClip 'Emote_Use_Start'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Emote_Use_Loop' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\nClip 'Emote_Use_End' has import animation warnings that might
       lower retargeting quality:\n\t'thumb_01_r' has translation animation that will
       be discarded.\n\t'index_01_r' has translation animation that will be discarded.\n\t'middle_01_r'
       has translation animation that will be discarded.\n\t'pinky_01_r' has translation
@@ -2029,16 +1847,17 @@ ModelImporter:
       be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'pinky_01_l'
       has translation animation that will be discarded.\n\t'ring_01_l' has translation
       animation that will be discarded.\n\t'thumb_01_l' has translation animation
-      that will be discarded.\n\nClip 'Jump_Start' has import animation warnings
-      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
-      that will be discarded.\n\t'index_01_r' has translation animation that will
-      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'index_01_l' has translation animation
-      that will be discarded.\n\t'middle_01_l' has translation animation that will
-      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
-      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Jump_Loop' has import animation
+      that will be discarded.\n\nClip 'Combat_Unarmed_Ready' has import animation
+      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
+      animation that will be discarded.\n\t'index_01_r' has translation animation
+      that will be discarded.\n\t'middle_01_r' has translation animation that will
+      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
+      has translation animation that will be discarded.\n\t'index_01_l' has translation
+      animation that will be discarded.\n\t'middle_01_l' has translation animation
+      that will be discarded.\n\t'middle_03_l' has scale animation that will be discarded.\n\t'pinky_01_l'
+      has translation animation that will be discarded.\n\t'ring_01_l' has translation
+      animation that will be discarded.\n\t'thumb_01_l' has translation animation
+      that will be discarded.\n\nClip 'Combat_Unarmed_Attack' has import animation
       warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
       animation that will be discarded.\n\t'index_01_r' has translation animation
       that will be discarded.\n\t'middle_01_r' has translation animation that will
@@ -2047,9 +1866,189 @@ ModelImporter:
       animation that will be discarded.\n\t'middle_01_l' has translation animation
       that will be discarded.\n\t'pinky_01_l' has translation animation that will
       be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Jump_End' has import
-      animation warnings that might lower retargeting quality:\n\t'thumb_01_r' has
-      translation animation that will be discarded.\n\t'index_01_r' has translation
+      has translation animation that will be discarded.\n\nClip 'Combat_Unarmed_Attack01'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Combat_Unarmed_Hit' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\nClip 'Combat_Unarmed_Dodge' has import animation warnings
+      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n\nClip 'Combat_Knockdown' has import animation
+      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
+      animation that will be discarded.\n\t'thumb_02_r' has translation animation
+      that will be discarded.\n\t'thumb_03_r' has translation animation that will
+      be discarded.\n\t'index_01_r' has translation animation that will be discarded.\n\t'index_02_r'
+      has translation animation that will be discarded.\n\t'index_03_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'middle_02_r' has translation animation that will
+      be discarded.\n\t'middle_03_r' has translation animation that will be discarded.\n\t'pinky_01_r'
+      has translation animation that will be discarded.\n\t'pinky_02_r' has translation
+      animation that will be discarded.\n\t'pinky_03_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'ring_02_r' has translation animation that will be discarded.\n\t'ring_03_r'
+      has translation animation that will be discarded.\n\t'index_01_l' has translation
+      animation that will be discarded.\n\t'index_02_l' has translation animation
+      that will be discarded.\n\t'index_03_l' has translation animation that will
+      be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'middle_02_l'
+      has translation animation that will be discarded.\n\t'middle_03_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'pinky_02_l' has translation animation that will
+      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'ring_02_l'
+      has translation animation that will be discarded.\n\t'ring_03_l' has translation
+      animation that will be discarded.\n\t'thumb_01_l' has translation animation
+      that will be discarded.\n\t'thumb_02_l' has translation animation that will
+      be discarded.\n\t'thumb_03_l' has translation animation that will be discarded.\n\nClip
+      'Walk_Forward' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Walk_Backwards' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\nClip 'Walk_Left' has import animation warnings that might
+      lower retargeting quality:\n\t'thumb_01_r' has translation animation that will
+      be discarded.\n\t'index_01_r' has translation animation that will be discarded.\n\t'middle_01_r'
+      has translation animation that will be discarded.\n\t'pinky_01_r' has translation
+      animation that will be discarded.\n\t'ring_01_r' has translation animation
+      that will be discarded.\n\t'index_01_l' has translation animation that will
+      be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'pinky_01_l'
+      has translation animation that will be discarded.\n\t'ring_01_l' has translation
+      animation that will be discarded.\n\t'thumb_01_l' has translation animation
+      that will be discarded.\n\nClip 'Walk_Right' has import animation warnings
+      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n\nClip 'Walk_ForwardLeft' has import animation
+      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
+      animation that will be discarded.\n\t'index_01_r' has translation animation
+      that will be discarded.\n\t'middle_01_r' has translation animation that will
+      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
+      has translation animation that will be discarded.\n\t'index_01_l' has translation
+      animation that will be discarded.\n\t'middle_01_l' has translation animation
+      that will be discarded.\n\t'pinky_01_l' has translation animation that will
+      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
+      has translation animation that will be discarded.\n\nClip 'Walk_ForwardRight'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Walk_BackwardLeft' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'pinky_01_r' has translation animation
+      that will be discarded.\n\t'ring_01_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\nClip 'Walk_BackwardRight' has import animation warnings that
+      might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n\nClip 'Idle02' has import animation warnings
+      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n\nClip 'Idle_Hit' has import animation warnings
+      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'middle_01_r' has translation animation that will be discarded.\n\t'pinky_01_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n\nClip 'Idle_StepLeft' has import animation
+      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
+      animation that will be discarded.\n\t'index_01_r' has translation animation
+      that will be discarded.\n\t'middle_01_r' has translation animation that will
+      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'ring_01_r'
+      has translation animation that will be discarded.\n\t'index_01_l' has translation
+      animation that will be discarded.\n\t'middle_01_l' has translation animation
+      that will be discarded.\n\t'pinky_01_l' has translation animation that will
+      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
+      has translation animation that will be discarded.\n\nClip 'Idle_StepRight'
+      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Jump_Start' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Jump_Loop' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
+      animation that will be discarded.\n\t'middle_01_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Jump_End' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'index_01_r' has translation
       animation that will be discarded.\n\t'middle_01_r' has translation animation
       that will be discarded.\n\t'pinky_01_r' has translation animation that will
       be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'index_01_l'
@@ -2151,24 +2150,23 @@ ModelImporter:
       has translation animation that will be discarded.\n\t'thumb_01_l' has translation
       animation that will be discarded.\n\nClip 'Walk_2HL_Forward' has import animation
       warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'thumb_02_r' has translation animation
-      that will be discarded.\n\t'thumb_03_r' has translation animation that will
-      be discarded.\n\t'index_01_r' has translation animation that will be discarded.\n\t'index_02_r'
-      has translation animation that will be discarded.\n\t'index_03_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'middle_02_r' has translation animation that will
-      be discarded.\n\t'middle_03_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'pinky_02_r' has translation
-      animation that will be discarded.\n\t'pinky_03_r' has translation animation
-      that will be discarded.\n\t'ring_01_r' has translation animation that will
-      be discarded.\n\t'ring_02_r' has translation animation that will be discarded.\n\t'ring_03_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Idle_2H' has import
-      animation warnings that might lower retargeting quality:\n\t'thumb_01_r' has
-      translation animation that will be discarded.\n\t'thumb_02_r' has translation
+      animation that will be discarded.\n\t'thumb_03_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'index_03_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'middle_02_r' has translation animation
+      that will be discarded.\n\t'middle_03_r' has translation animation that will
+      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'pinky_02_r'
+      has translation animation that will be discarded.\n\t'pinky_03_r' has translation
+      animation that will be discarded.\n\t'ring_01_r' has translation animation
+      that will be discarded.\n\t'ring_02_r' has translation animation that will
+      be discarded.\n\t'ring_03_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Idle_2H' has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      has translation animation that will be discarded.\n\t'thumb_02_r' has translation
       animation that will be discarded.\n\t'thumb_03_r' has translation animation
       that will be discarded.\n\t'index_01_r' has translation animation that will
       be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'index_03_r'
@@ -2207,39 +2205,7 @@ ModelImporter:
       that will be discarded.\n\t'ring_02_r' has translation animation that will
       be discarded.\n\t'ring_03_r' has translation animation that will be discarded.\n\nClip
       'Walk_2HL_Backward' has import animation warnings that might lower retargeting
-      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'thumb_02_r'
-      has translation animation that will be discarded.\n\t'thumb_03_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'index_02_r' has translation animation that will
-      be discarded.\n\t'index_03_r' has translation animation that will be discarded.\n\t'middle_01_r'
-      has translation animation that will be discarded.\n\t'middle_02_r' has translation
-      animation that will be discarded.\n\t'middle_03_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'pinky_03_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'ring_02_r' has translation animation
-      that will be discarded.\n\t'ring_03_r' has translation animation that will
-      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
-      animation that will be discarded.\n\t'ring_01_l' has translation animation
-      that will be discarded.\n\t'thumb_01_l' has translation animation that will
-      be discarded.\n\nClip 'Walk_2HL_Left' has import animation warnings that might
-      lower retargeting quality:\n\t'thumb_01_r' has translation animation that will
-      be discarded.\n\t'index_01_r' has translation animation that will be discarded.\n\t'index_02_r'
-      has translation animation that will be discarded.\n\t'index_03_r' has translation
-      animation that will be discarded.\n\t'middle_01_r' has translation animation
-      that will be discarded.\n\t'middle_02_r' has translation animation that will
-      be discarded.\n\t'middle_03_r' has translation animation that will be discarded.\n\t'pinky_01_r'
-      has translation animation that will be discarded.\n\t'pinky_02_r' has translation
-      animation that will be discarded.\n\t'pinky_03_r' has translation animation
-      that will be discarded.\n\t'ring_01_r' has translation animation that will
-      be discarded.\n\t'ring_02_r' has translation animation that will be discarded.\n\t'ring_03_r'
-      has translation animation that will be discarded.\n\t'index_01_l' has translation
-      animation that will be discarded.\n\t'middle_01_l' has translation animation
-      that will be discarded.\n\t'pinky_01_l' has translation animation that will
-      be discarded.\n\t'ring_01_l' has translation animation that will be discarded.\n\t'thumb_01_l'
-      has translation animation that will be discarded.\n\nClip 'Walk_2HL_Right'
-      has import animation warnings that might lower retargeting quality:\n\t'thumb_01_r'
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'thumb_03_r'
       has translation animation that will be discarded.\n\t'index_01_r' has translation
       animation that will be discarded.\n\t'index_02_r' has translation animation
       that will be discarded.\n\t'index_03_r' has translation animation that will
@@ -2254,23 +2220,7 @@ ModelImporter:
       be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'pinky_01_l'
       has translation animation that will be discarded.\n\t'ring_01_l' has translation
       animation that will be discarded.\n\t'thumb_01_l' has translation animation
-      that will be discarded.\n\nClip 'Walk_2HL_ForwardLeft' has import animation
-      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
-      animation that will be discarded.\n\t'index_01_r' has translation animation
-      that will be discarded.\n\t'index_02_r' has translation animation that will
-      be discarded.\n\t'index_03_r' has translation animation that will be discarded.\n\t'middle_01_r'
-      has translation animation that will be discarded.\n\t'middle_02_r' has translation
-      animation that will be discarded.\n\t'middle_03_r' has translation animation
-      that will be discarded.\n\t'pinky_01_r' has translation animation that will
-      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'pinky_03_r'
-      has translation animation that will be discarded.\n\t'ring_01_r' has translation
-      animation that will be discarded.\n\t'ring_02_r' has translation animation
-      that will be discarded.\n\t'ring_03_r' has translation animation that will
-      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
-      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
-      animation that will be discarded.\n\t'ring_01_l' has translation animation
-      that will be discarded.\n\t'thumb_01_l' has translation animation that will
-      be discarded.\n\nClip 'Walk_2HL_ForwardRight' has import animation warnings
+      that will be discarded.\n\nClip 'Walk_2HL_Left' has import animation warnings
       that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
       that will be discarded.\n\t'index_01_r' has translation animation that will
       be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'index_03_r'
@@ -2286,7 +2236,7 @@ ModelImporter:
       animation that will be discarded.\n\t'pinky_01_l' has translation animation
       that will be discarded.\n\t'ring_01_l' has translation animation that will
       be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
-      'Walk_2HL_BackwardLeft' has import animation warnings that might lower retargeting
+      'Walk_2HL_Right' has import animation warnings that might lower retargeting
       quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
       has translation animation that will be discarded.\n\t'index_02_r' has translation
       animation that will be discarded.\n\t'index_03_r' has translation animation
@@ -2301,7 +2251,7 @@ ModelImporter:
       that will be discarded.\n\t'middle_01_l' has translation animation that will
       be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
       has translation animation that will be discarded.\n\t'thumb_01_l' has translation
-      animation that will be discarded.\n\nClip 'Walk_2HL_BackwardRight' has import
+      animation that will be discarded.\n\nClip 'Walk_2HL_ForwardLeft' has import
       animation warnings that might lower retargeting quality:\n\t'thumb_01_r' has
       translation animation that will be discarded.\n\t'index_01_r' has translation
       animation that will be discarded.\n\t'index_02_r' has translation animation
@@ -2317,7 +2267,54 @@ ModelImporter:
       be discarded.\n\t'middle_01_l' has translation animation that will be discarded.\n\t'pinky_01_l'
       has translation animation that will be discarded.\n\t'ring_01_l' has translation
       animation that will be discarded.\n\t'thumb_01_l' has translation animation
-      that will be discarded.\n"
+      that will be discarded.\n\nClip 'Walk_2HL_ForwardRight' has import animation
+      warnings that might lower retargeting quality:\n\t'thumb_01_r' has translation
+      animation that will be discarded.\n\t'index_01_r' has translation animation
+      that will be discarded.\n\t'index_02_r' has translation animation that will
+      be discarded.\n\t'index_03_r' has translation animation that will be discarded.\n\t'middle_01_r'
+      has translation animation that will be discarded.\n\t'middle_02_r' has translation
+      animation that will be discarded.\n\t'middle_03_r' has translation animation
+      that will be discarded.\n\t'pinky_01_r' has translation animation that will
+      be discarded.\n\t'pinky_02_r' has translation animation that will be discarded.\n\t'pinky_03_r'
+      has translation animation that will be discarded.\n\t'ring_01_r' has translation
+      animation that will be discarded.\n\t'ring_02_r' has translation animation
+      that will be discarded.\n\t'ring_03_r' has translation animation that will
+      be discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'middle_01_l'
+      has translation animation that will be discarded.\n\t'pinky_01_l' has translation
+      animation that will be discarded.\n\t'ring_01_l' has translation animation
+      that will be discarded.\n\t'thumb_01_l' has translation animation that will
+      be discarded.\n\nClip 'Walk_2HL_BackwardLeft' has import animation warnings
+      that might lower retargeting quality:\n\t'thumb_01_r' has translation animation
+      that will be discarded.\n\t'index_01_r' has translation animation that will
+      be discarded.\n\t'index_02_r' has translation animation that will be discarded.\n\t'index_03_r'
+      has translation animation that will be discarded.\n\t'middle_01_r' has translation
+      animation that will be discarded.\n\t'middle_02_r' has translation animation
+      that will be discarded.\n\t'middle_03_r' has translation animation that will
+      be discarded.\n\t'pinky_01_r' has translation animation that will be discarded.\n\t'pinky_02_r'
+      has translation animation that will be discarded.\n\t'pinky_03_r' has translation
+      animation that will be discarded.\n\t'ring_01_r' has translation animation
+      that will be discarded.\n\t'ring_02_r' has translation animation that will
+      be discarded.\n\t'ring_03_r' has translation animation that will be discarded.\n\t'index_01_l'
+      has translation animation that will be discarded.\n\t'middle_01_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'ring_01_l' has translation animation that will
+      be discarded.\n\t'thumb_01_l' has translation animation that will be discarded.\n\nClip
+      'Walk_2HL_BackwardRight' has import animation warnings that might lower retargeting
+      quality:\n\t'thumb_01_r' has translation animation that will be discarded.\n\t'index_01_r'
+      has translation animation that will be discarded.\n\t'index_02_r' has translation
+      animation that will be discarded.\n\t'index_03_r' has translation animation
+      that will be discarded.\n\t'middle_01_r' has translation animation that will
+      be discarded.\n\t'middle_02_r' has translation animation that will be discarded.\n\t'middle_03_r'
+      has translation animation that will be discarded.\n\t'pinky_01_r' has translation
+      animation that will be discarded.\n\t'pinky_02_r' has translation animation
+      that will be discarded.\n\t'pinky_03_r' has translation animation that will
+      be discarded.\n\t'ring_01_r' has translation animation that will be discarded.\n\t'ring_02_r'
+      has translation animation that will be discarded.\n\t'ring_03_r' has translation
+      animation that will be discarded.\n\t'index_01_l' has translation animation
+      that will be discarded.\n\t'middle_01_l' has translation animation that will
+      be discarded.\n\t'pinky_01_l' has translation animation that will be discarded.\n\t'ring_01_l'
+      has translation animation that will be discarded.\n\t'thumb_01_l' has translation
+      animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -6347,7 +6344,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.17301641
+        functionName: PlayFootstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6772482
+        functionName: PlayFootstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -6685,7 +6696,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 442.80002
+      additiveReferencePoseFrame: 443
     - serializedVersion: 16
       name: Run_Backwards
       takeName: Run_Backwards
@@ -60797,7 +60808,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.5132223
+        functionName: PlayFootstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -61135,7 +61153,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 6956
     - serializedVersion: 16
       name: Walk_Left
       takeName: Walk_Left
@@ -80036,7 +80054,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.14288166
+        functionName: PlayFootstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.64551383
+        functionName: PlayFootstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -80374,7 +80406,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 9956
     - serializedVersion: 16
       name: Sprint_Backwards
       takeName: Sprint_Backwards
@@ -84319,8 +84351,7 @@ ModelImporter:
     hasTranslationDoF: 1
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: da1332e915e84cb691bc1ad994e4ff8f,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: da1332e915e84cb691bc1ad994e4ff8f, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
@@ -84332,10 +84363,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 178653
-  packageName: Modular Fantasy Stylized Human Female
-  packageVersion: 2.3.1
-  assetPath: Assets/StylizedCharacter/Animations/Character/Human/Female/A_Hu_F_BasePack.fbx
-  uploadId: 658918

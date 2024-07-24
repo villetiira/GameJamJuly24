@@ -151,6 +151,11 @@ namespace keijo
                 animator.SetFloat("MoveSpeed", agent.velocity.normalized.magnitude / 2); // half the velocity to walk
             }
 
+            if (PlayerIsInFront(targetPlayer.transform.position) && HasLineOfSight(targetPlayer.transform.position))
+            {
+                SwitchToCombatState();
+            }
+
         }
 
         public virtual void RunAlertState()
@@ -200,8 +205,9 @@ namespace keijo
 
         public bool RandomPoint(Vector3 center, float range, out Vector3 result)
         {
-
-            Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
+            //Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
+            EnemySpawnPoint[] spawns = FindObjectsByType<EnemySpawnPoint>(0);
+            Vector3 randomPoint = spawns[Random.Range(0, spawns.Length)].transform.position;
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
             {
@@ -350,6 +356,11 @@ namespace keijo
 
             //check if player is in 45 degree cone
             return Vector3.Angle(forwardDirection, directionToPlayer) <= 90 * 0.5f;
+        }
+
+        public void WarpToPosition(Vector3 position)
+        {
+            agent.Warp(position);
         }
 
         public bool HasLineOfSight(Vector3 playerPos)

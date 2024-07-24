@@ -1393,6 +1393,9 @@ MonoBehaviour:
   alertPatrolRange: 15
   alertTimer: 10
   maxAlertTimer: 10
+  walkSpeed: 3
+  runSpeed: 7
+  damage: 50
   attackSound: {fileID: 0}
   idleSound1: {fileID: 0}
   idleSound2: {fileID: 0}
