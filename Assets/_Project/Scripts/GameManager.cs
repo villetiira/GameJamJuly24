@@ -36,6 +36,11 @@ namespace keijo
         public int coins = 0;
         public float dungeonMultiplier = 2;
 
+        [Header("Audio")]
+        public AudioSource backgroundMusic;
+        public AudioSource gameOverMusic;
+        public AudioSource dungeonBackground;
+
         public List<GameObject> spawnedItems = new List<GameObject>();
         public List<GameObject> enemies = new List<GameObject>();
 
@@ -55,13 +60,13 @@ namespace keijo
             DateTime dateTimeCompareTo = new DateTime(2024, 01, 10);
             DateTime dateTimeToday = DateTime.Today;
             seedGeneratorInt = (int)((dateTimeToday - dateTimeCompareTo).TotalDays);
+            dungeon = FindAnyObjectByType<RuntimeDungeon>();
+            dungeon.Generator.OnGenerationStatusChanged += OnDungeonGenerationStatusChanged;
         }
 
         private void Start()
         {
             StartLevel();
-            dungeon = FindAnyObjectByType<RuntimeDungeon>();
-            dungeon.Generator.OnGenerationStatusChanged += OnDungeonGenerationStatusChanged;
         }
 
         public void StartLevel()

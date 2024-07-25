@@ -41,6 +41,7 @@ namespace keijo
 
         [Header("Player stats")]
         public int health = 100;
+        public bool isDead = false;
 
         [Header("Camera Settings")]
         public Transform cameraFollowPoint;
@@ -53,11 +54,6 @@ namespace keijo
         LayerMask layerMask;
         Vector3 boxSize = new Vector3(1,1,1);
         Quaternion cameraRotation;
-
-
-        int targetPlayer = 0;
-
-        bool attackInProgress = false;
 
         public event Action PlayerDied;
 
@@ -88,7 +84,7 @@ namespace keijo
 
         void Update()
         {
-
+            if (!isDead) return;
             if (Input.GetMouseButtonDown(0))
             {
                 Cursor.lockState = CursorLockMode.Locked;
@@ -252,6 +248,17 @@ namespace keijo
         public void TakeDamage(int damage)
         {
             Debug.Log("Took damage: " + damage);
+            health -= damage;
+            if(health <= 0)
+            {
+                Die();
+            }
+        }
+
+        void Die()
+        {
+            PlayerDied.Invoke();
+            isDead = true;
         }
 
 
