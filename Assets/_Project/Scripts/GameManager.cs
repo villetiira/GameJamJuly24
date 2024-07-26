@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using DunGen;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 namespace keijo
 {
@@ -24,6 +24,9 @@ namespace keijo
         public RuntimeDungeon dungeon;
         public int seedGeneratorInt;
         public System.Random levelRandom;
+
+        [Header("Player")]
+        public PlayerController player;
         public Transform playerTransform;
 
         [Header("Level settings")]
@@ -35,6 +38,16 @@ namespace keijo
         public int quota = 100;
         public int coins = 0;
         public float dungeonMultiplier = 2;
+
+        [Header("UI")]
+        public GameObject gameOverScreen;
+        public GameObject dayStartingScreen;
+        public TMP_Text dayNumberDisplay;
+        public TMP_Text currentCoins;
+        public TMP_Text bills;
+        public TMP_Text daysUntilBills;
+        bool displayDayInfo = false;
+        float dayInfoTimer = 5f;
 
         [Header("Audio")]
         public AudioSource backgroundMusic;
@@ -69,18 +82,41 @@ namespace keijo
             StartLevel();
         }
 
+        private void Update()
+        {
+            if(displayDayInfo)
+            {
+                dayInfoTimer -= Time.deltaTime;
+                if(dayInfoTimer < 0)
+                {
+                    dayStartingScreen.SetActive(false);
+                }
+            }
+        }
+
         public void StartLevel()
         {
-            //SceneManager.LoadScene(1, LoadSceneMode.Additive);
+            dayNumber++;
+            roundNumber++;
+            ShowDayInfo();
+            player.DaySwitched();
             levelRandom = new System.Random(seedGeneratorInt);
             levelSeed = levelRandom.Next(0, 100000000);
-            
-            dayNumber++;
 
             GenerateTaskList();
             GenerateDungeon();
         }
 
+        void ShowDayInfo()
+        {
+            dayInfoTimer = 5;
+            displayDayInfo = true;
+            dayNumberDisplay.text = "Day " + dayNumber;
+            bills.text = "Bills To Pay: " + quota;
+            daysUntilBills.text = "Bills Due: " + (3 - roundNumber) + " days";
+            currentCoins.text = "Current Coins: " + coins;
+            dayStartingScreen.SetActive(true);
+        }
 
         void GenerateTaskList()
         {
@@ -130,6 +166,7 @@ namespace keijo
                 SpawnItems();
 
                 SpawnEnemies();
+                player.LevelLoaded();
             }
         }
 
@@ -276,20 +313,6 @@ namespace keijo
 
         public void EndDay()
         {
-            if (dayNumber == 3)
-            {
-                if(coins < quota)
-                {
-                    GameOver();
-                }
-                coins -= quota;
-                quota = (int)Mathf.Floor(quota + quota * 0.33f);
-                dungeonMultiplier += 0.2f;
-                requiredMaterials++;
-                enemyAmountAtStart++;
-                dayNumber = 0;
-            }
-
             // give bonus points for completing the task
             int bonus = 0;
             if (taskList.deliveredBlueCaps >= taskList.blueCapCount) bonus += (int) Mathf.Floor(taskList.blueCapCount * blueCapValue * taskBonus);
@@ -318,6 +341,20 @@ namespace keijo
             enemies.Clear();
             Debug.Log(enemies.Count);
 
+            if (roundNumber == 3)
+            {
+                if (coins < quota)
+                {
+                    GameOver();
+                    return; 
+                }
+                coins -= quota;
+                quota = (int)Mathf.Floor(quota + quota * 0.33f);
+                dungeonMultiplier += 0.2f;
+                requiredMaterials++;
+                enemyAmountAtStart++;
+                roundNumber = 0;
+            }
             // if quota met, start next level
             StartLevel();
         }
@@ -326,8 +363,10 @@ namespace keijo
         {
             Debug.Log("Game Over");
             // show game over UI
+            gameOverScreen.SetActive(true);
             // stop game from running
             // thank the player
+            // move to a diffrent scene?
         }
     }
 

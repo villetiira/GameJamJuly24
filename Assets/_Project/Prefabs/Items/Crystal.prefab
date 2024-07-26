@@ -656,7 +656,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 557895ea9652c7844a7e09c5869e3eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: Ingredient
+  interactableName: Crystal
+  interactTime: 1
+  interactTooltip: '[E] Gather'
   itemName: Crystal
   gatherTime: 3
 --- !u!65 &-5740326061705660520

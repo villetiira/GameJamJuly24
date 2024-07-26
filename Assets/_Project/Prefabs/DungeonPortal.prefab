@@ -188,10 +188,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa703e20d83dc9459015667d6298f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: Portal
+  interactableName: Portal
+  interactTime: 1
+  interactTooltip: '[E] Exit Dungeon'
   portalInShop: 0
   connectedPortal: {fileID: 0}
   exitPoint: {fileID: 7937636199001080101}
+  directionalLight: {fileID: 0}
+  indoors: 1
+  gameManager: {fileID: 0}
 --- !u!65 &2900534388297287179
 BoxCollider:
   m_ObjectHideFlags: 0

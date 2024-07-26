@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-
+using UnityEngine.Events;
+using UnityEngine.UI;
+using TMPro;
 
 namespace keijo
 {
@@ -49,11 +51,22 @@ namespace keijo
         public GameObject characterBody;
         public GameObject crosshair;
 
+        [Header("Interacting")]
+        bool interacting = false;
+        Interactable interactTarget;
+        float interactTimer;
+        public GameObject interactPanel;
+        public TMP_Text interactText;
+        public TMP_Text interactTargetName;
+        public Slider interactProgress;
+        public UnityEvent<float> InteractProgress = new UnityEvent<float>();
+
         // variables
         bool isGrounded = false;
         LayerMask layerMask;
         Vector3 boxSize = new Vector3(1,1,1);
         Quaternion cameraRotation;
+        bool daySwitching;
 
         public event Action PlayerDied;
 
@@ -84,7 +97,7 @@ namespace keijo
 
         void Update()
         {
-            if (!isDead) return;
+            if (isDead || daySwitching) return;
             if (Input.GetMouseButtonDown(0))
             {
                 Cursor.lockState = CursorLockMode.Locked;
@@ -103,8 +116,22 @@ namespace keijo
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Interact();
+                interacting = true;
             }
+            if (Input.GetKeyUp(KeyCode.E))
+            {
+                interacting = false;
+                interactTimer = 0;
+                interacting = false;
+                interactProgress.value = 0;
+                interactProgress.gameObject.SetActive(false);
+            }
+            if (interacting)
+            {
+                Interacting();
+            }
+
+            ShowInteractables();
 
         }
 
@@ -261,23 +288,86 @@ namespace keijo
             isDead = true;
         }
 
-
-        public void Interact()
+        public void ShowInteractables()
         {
-            // raycast to see what player is targeting
             RaycastHit raycastHit;
-            if (Physics.Raycast(characterCamera.transform.position, characterCamera.transform.TransformDirection(Vector3.forward), out raycastHit, 5f))
+            if (Physics.Raycast(characterCamera.transform.position, characterCamera.transform.TransformDirection(Vector3.forward), out raycastHit, 3f))
             {
-                Debug.Log("targeting object: " + raycastHit.collider.gameObject.name);
                 GameObject targetObject = raycastHit.collider.gameObject;
-
-               if(targetObject.GetComponent<Interactable>())
-               {
-                    targetObject.GetComponent<Interactable>().Interact(gameObject);
-               }
+                Interactable interactable = targetObject.GetComponent<Interactable>();
+                Debug.Log(interactable);
+                if(interactable && !interactPanel.activeSelf)
+                {
+                    interactPanel.SetActive(true);
+                    interactText.text = interactable.interactTooltip;
+                    interactTargetName.text = interactable.interactableName;
+                }
+                else if(!interactable)
+                {
+                    interactPanel.SetActive(false);
+                }
+            }
+            else
+            {
+                interactPanel.SetActive(false);
             }
         }
 
+        public void Interacting()
+        {
+            // raycast to see what player is targeting
+            RaycastHit raycastHit;
+            if (Physics.Raycast(characterCamera.transform.position, characterCamera.transform.TransformDirection(Vector3.forward), out raycastHit, 3f))
+            {
+                Debug.Log("targeting object: " + raycastHit.collider.gameObject.name);
+                GameObject targetObject = raycastHit.collider.gameObject;
+                Interactable interactable = targetObject.GetComponent<Interactable>();
+
+                if(interactable)
+                {
+                    if (interactable == interactTarget)
+                    {
+                        interactProgress.gameObject.SetActive(true);
+                        Debug.Log(interactTarget.interactTime);
+                        Debug.Log(interactTimer);
+                        if (interactTarget.interactTime < interactTimer)
+                        {
+                            interactable.Interact(gameObject);
+                            interactTimer = 0;
+                            interacting = false;
+                            interactProgress.value = 0;
+                            interactProgress.gameObject.SetActive(false);
+                        }
+                        interactTimer += Time.deltaTime;
+                        Debug.Log("test " + interactTimer / interactTarget.interactTime);
+                        interactProgress.value =  interactTimer / interactTarget.interactTime;
+                    }
+                    else
+                    {
+                        interactTimer = 0;
+                        interactTarget = interactable;
+                        interactProgress.value = 0;
+                        interactProgress.gameObject.SetActive(false);
+                    }
+                }
+                else
+                {
+                    interactTimer = 0;
+                    interactProgress.value = 0;
+                    interactProgress.gameObject.SetActive(false);
+                }
+            }
+        }
+
+        public void DaySwitched()
+        {
+            daySwitching = true;
+        }
+
+        public void LevelLoaded()
+        {
+            daySwitching = false;
+        }
 
     }
 }

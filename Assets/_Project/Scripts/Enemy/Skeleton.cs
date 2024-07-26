@@ -17,7 +17,7 @@ namespace keijo
         {
             base.RunCombatState();
 
-            bool playerInSight = HasLineOfSight(targetPlayer.position);
+            bool playerInSight = HasLineOfSight(targetPlayer.position, 10);
 
             // if target is not lost
             if (playerInSight)

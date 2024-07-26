@@ -151,7 +151,7 @@ namespace keijo
                 animator.SetFloat("MoveSpeed", agent.velocity.normalized.magnitude / 2); // half the velocity to walk
             }
 
-            if (PlayerIsInFront(targetPlayer.transform.position) && HasLineOfSight(targetPlayer.transform.position))
+            if (PlayerIsInFront(targetPlayer.transform.position) && HasLineOfSight(targetPlayer.transform.position, 5))
             {
                 SwitchToCombatState();
             }
@@ -363,12 +363,12 @@ namespace keijo
             agent.Warp(position);
         }
 
-        public bool HasLineOfSight(Vector3 playerPos)
+        public bool HasLineOfSight(Vector3 playerPos, int visionDistance)
         {
             // Perform raycast from start to target with the specified layer mask
             RaycastHit hit;
             Debug.DrawLine(enemyEyes.position, playerPos, Color.red, 0.1f);
-            if (Physics.Raycast(enemyEyes.position, playerPos - enemyEyes.position, out hit, layerMask))
+            if (Physics.Raycast(enemyEyes.position, playerPos - enemyEyes.position, out hit, visionDistance, layerMask))
             {
                 // No obstacles blocking the line of sight
                 if (hit.collider.CompareTag("Player"))
