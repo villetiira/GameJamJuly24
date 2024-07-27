@@ -151,6 +151,9 @@ namespace keijo
                 animator.SetFloat("MoveSpeed", agent.velocity.normalized.magnitude / 2); // half the velocity to walk
             }
 
+            Debug.Log("InFront " + PlayerIsInFront(targetPlayer.transform.position));
+            Debug.Log("InSight " + HasLineOfSight(targetPlayer.transform.position, 100));
+
             if (PlayerIsInFront(targetPlayer.transform.position) && HasLineOfSight(targetPlayer.transform.position, 5))
             {
                 SwitchToCombatState();
@@ -160,6 +163,12 @@ namespace keijo
 
         public virtual void RunAlertState()
         {
+            bool playerInSight = HasLineOfSight(targetPlayer.position, 100);
+            if(playerInSight)
+            {
+                SwitchToCombatState();
+            }
+
             // if player not spotted within timer, go back to patrol state
             if (alertTimer < 0)
             {
@@ -278,7 +287,7 @@ namespace keijo
         {
             if (playerInRange)
             {
-                targetPlayer.GetComponent<PlayerController>().TakeDamage(damage);
+                targetPlayer.GetComponentInParent<PlayerController>().TakeDamage(damage);
             }
         }
 
@@ -292,7 +301,7 @@ namespace keijo
             // Switch to Follow state if not already following
             if (currentState != 1 || currentState != 3) // check if already in combat state or dead
             {
-                targetPlayer = player.GetComponent<PlayerController>().cameraFollowPoint;
+                targetPlayer = player.GetComponentInParent<PlayerController>().cameraFollowPoint;
                 SwitchToCombatState();
             }
         }
@@ -367,18 +376,21 @@ namespace keijo
         {
             // Perform raycast from start to target with the specified layer mask
             RaycastHit hit;
+            Vector3 directionToPlayer = playerPos - enemyEyes.position;
             Debug.DrawLine(enemyEyes.position, playerPos, Color.red, 0.1f);
-            if (Physics.Raycast(enemyEyes.position, playerPos - enemyEyes.position, out hit, visionDistance, layerMask))
+            if (Physics.Raycast(enemyEyes.position, directionToPlayer, out hit, visionDistance, ~layerMask))
             {
+                Debug.Log(hit);
+                Debug.Log(hit.collider.name);
                 // No obstacles blocking the line of sight
                 if (hit.collider.CompareTag("Player"))
                 {
+                    Debug.Log("Player in sight");
                     return true;
                 }
             }
 
             // If no direct line of sight, check using spherecast
-            Vector3 directionToPlayer = playerPos - enemyEyes.position;
 
             if (Physics.SphereCast(enemyEyes.position, 0.5f, directionToPlayer.normalized, out hit, 10))
             {

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4994297811960633091}
   - component: {fileID: 3222734247220305061}
   - component: {fileID: 2595785176401202129}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 2110743503475987628}
   - component: {fileID: 6733371002706031767}
   - component: {fileID: 5675732518485454567}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 5040422221248396380}
   - component: {fileID: 7164096314123331404}
   - component: {fileID: 6360318383721871511}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 630668357682537621}
   - component: {fileID: 1677256434442199823}
   - component: {fileID: 4092264222397736096}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 7468531687401764236}
   - component: {fileID: 7405374088681083747}
   - component: {fileID: 6608609137213724880}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 1795211081935066504}
   - component: {fileID: 1819361846079078426}
   - component: {fileID: 9203437501822258703}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 5039028781323859428}
   - component: {fileID: 5587572801389370502}
   - component: {fileID: 8928189980337848310}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750621651336425574}
   - component: {fileID: 623375842869399603}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Room3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,6 +870,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doorway (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225548407474374132, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5276786190672728664, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.5
@@ -936,6 +944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1301846458502769011, guid: 2b500df41d852c54eaa773bf9d4d36d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5440898912711558001, guid: 2b500df41d852c54eaa773bf9d4d36d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.91159314
@@ -997,6 +1009,14 @@ PrefabInstance:
     - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_Name
       value: Doorway (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225548407474374132, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5276786190672728664, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1064,6 +1084,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doorway
       objectReference: {fileID: 0}
+    - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225548407474374132, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5276786190672728664, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1129,6 +1157,14 @@ PrefabInstance:
     - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_Name
       value: Doorway (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225548407474374132, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5276786190672728664, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_LocalPosition.x

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2110743503475987628}
   - component: {fileID: 6733371002706031767}
   - component: {fileID: 5675732518485454567}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 7468531687401764236}
   - component: {fileID: 7405374088681083747}
   - component: {fileID: 6608609137213724880}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 5039028781323859428}
   - component: {fileID: 5587572801389370502}
   - component: {fileID: 8928189980337848310}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 2175043823975998858}
   - component: {fileID: 4064855466691101331}
   - component: {fileID: 5751141585965844424}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750621651336425574}
   - component: {fileID: 623375842869399603}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Room1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,6 +544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1301846458502769011, guid: 2b500df41d852c54eaa773bf9d4d36d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5440898912711558001, guid: 2b500df41d852c54eaa773bf9d4d36d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6098249
@@ -646,6 +650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RandomLootSpawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7600102180166995053, guid: 06252e13bff977743ad0c93d3f61a325, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -667,6 +675,14 @@ PrefabInstance:
     - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_Name
       value: Doorway
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225548407474374132, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5276786190672728664, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -774,6 +790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RandomLootSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 7600102180166995053, guid: 06252e13bff977743ad0c93d3f61a325, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -795,6 +815,14 @@ PrefabInstance:
     - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_Name
       value: Doorway
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079764002833930137, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225548407474374132, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5276786190672728664, guid: 66550aca57ae04449afc2c58ac24f07f, type: 3}
       propertyPath: m_LocalPosition.x

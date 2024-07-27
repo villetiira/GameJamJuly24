@@ -33,6 +33,8 @@ namespace keijo
         private const string HorizontalInput = "Horizontal";
         private const string VerticalInput = "Vertical";
 
+        public GameManager gameManager;
+
         [Header("Movement Settings")]
         public float walkSpeed = 5f;
         public float sprintSpeed = 10f;
@@ -286,6 +288,7 @@ namespace keijo
         {
             PlayerDied.Invoke();
             isDead = true;
+            gameManager.GameOver();
         }
 
         public void ShowInteractables()
@@ -295,7 +298,6 @@ namespace keijo
             {
                 GameObject targetObject = raycastHit.collider.gameObject;
                 Interactable interactable = targetObject.GetComponent<Interactable>();
-                Debug.Log(interactable);
                 if(interactable && !interactPanel.activeSelf)
                 {
                     interactPanel.SetActive(true);
@@ -319,7 +321,6 @@ namespace keijo
             RaycastHit raycastHit;
             if (Physics.Raycast(characterCamera.transform.position, characterCamera.transform.TransformDirection(Vector3.forward), out raycastHit, 3f))
             {
-                Debug.Log("targeting object: " + raycastHit.collider.gameObject.name);
                 GameObject targetObject = raycastHit.collider.gameObject;
                 Interactable interactable = targetObject.GetComponent<Interactable>();
 
@@ -328,8 +329,6 @@ namespace keijo
                     if (interactable == interactTarget)
                     {
                         interactProgress.gameObject.SetActive(true);
-                        Debug.Log(interactTarget.interactTime);
-                        Debug.Log(interactTimer);
                         if (interactTarget.interactTime < interactTimer)
                         {
                             interactable.Interact(gameObject);
@@ -339,7 +338,6 @@ namespace keijo
                             interactProgress.gameObject.SetActive(false);
                         }
                         interactTimer += Time.deltaTime;
-                        Debug.Log("test " + interactTimer / interactTarget.interactTime);
                         interactProgress.value =  interactTimer / interactTarget.interactTime;
                     }
                     else
