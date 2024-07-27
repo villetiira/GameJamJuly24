@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Events;
@@ -53,6 +51,10 @@ namespace keijo
         public GameObject characterBody;
         public GameObject crosshair;
 
+        [Header("Audio")]
+        public AudioSource audioSource;
+        public AudioClip takeDamageClip;
+
         [Header("Interacting")]
         bool interacting = false;
         Interactable interactTarget;
@@ -65,12 +67,7 @@ namespace keijo
 
         // variables
         bool isGrounded = false;
-        LayerMask layerMask;
-        Vector3 boxSize = new Vector3(1,1,1);
-        Quaternion cameraRotation;
         bool daySwitching;
-
-        public event Action PlayerDied;
 
         private void Awake()
         {
@@ -277,6 +274,7 @@ namespace keijo
         public void TakeDamage(int damage)
         {
             Debug.Log("Took damage: " + damage);
+            audioSource.PlayOneShot(takeDamageClip);
             health -= damage;
             if(health <= 0)
             {
@@ -286,9 +284,9 @@ namespace keijo
 
         void Die()
         {
-            PlayerDied.Invoke();
+            Debug.Log("Player died");
             isDead = true;
-            gameManager.GameOver();
+            gameManager.GameOver(true);
         }
 
         public void ShowInteractables()
@@ -332,6 +330,7 @@ namespace keijo
                         if (interactTarget.interactTime < interactTimer)
                         {
                             interactable.Interact(gameObject);
+                            audioSource.PlayOneShot(interactable.GetInteractClip());
                             interactTimer = 0;
                             interacting = false;
                             interactProgress.value = 0;

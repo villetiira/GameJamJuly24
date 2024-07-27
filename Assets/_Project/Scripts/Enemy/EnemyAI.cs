@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -151,9 +149,6 @@ namespace keijo
                 animator.SetFloat("MoveSpeed", agent.velocity.normalized.magnitude / 2); // half the velocity to walk
             }
 
-            Debug.Log("InFront " + PlayerIsInFront(targetPlayer.transform.position));
-            Debug.Log("InSight " + HasLineOfSight(targetPlayer.transform.position, 100));
-
             if (PlayerIsInFront(targetPlayer.transform.position) && HasLineOfSight(targetPlayer.transform.position, 5))
             {
                 SwitchToCombatState();
@@ -264,6 +259,16 @@ namespace keijo
             }
         }
 
+        public void PlayFootstepSound()
+        {
+            audioSource.PlayOneShot(footStepSound);
+        }
+
+        public void PlayAttackSound()
+        {
+            audioSource.PlayOneShot(attackSound);
+        }
+
         public void StartAttacking()
         {
             Debug.Log("Attacking!");
@@ -285,15 +290,16 @@ namespace keijo
 
         public void Attack()
         {
+            Debug.Log("Attacking");
             if (playerInRange)
             {
                 targetPlayer.GetComponentInParent<PlayerController>().TakeDamage(damage);
+                audioSource.PlayOneShot(hitSound);
             }
         }
 
         public void Hit(Transform player)
         {
-            Debug.Log(gameObject.name + " is hit by " + player.name + "!");
             if(!attacking)
             {
                 animator.SetTrigger("Hit");
@@ -380,12 +386,9 @@ namespace keijo
             Debug.DrawLine(enemyEyes.position, playerPos, Color.red, 0.1f);
             if (Physics.Raycast(enemyEyes.position, directionToPlayer, out hit, visionDistance, ~layerMask))
             {
-                Debug.Log(hit);
-                Debug.Log(hit.collider.name);
                 // No obstacles blocking the line of sight
                 if (hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("Player in sight");
                     return true;
                 }
             }

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
@@ -37,10 +36,11 @@ namespace keijo
         public int dayNumber = 0;
         public int quota = 100;
         public int coins = 0;
-        public float dungeonMultiplier = 2;
+        public float dungeonMultiplier = 1;
 
         [Header("UI")]
         public GameObject gameOverScreen;
+        public TMP_Text gameOverReason;
         public GameObject dayStartingScreen;
         public TMP_Text dayNumberDisplay;
         public TMP_Text currentCoins;
@@ -345,7 +345,7 @@ namespace keijo
             {
                 if (coins < quota)
                 {
-                    GameOver();
+                    GameOver(false);
                     return; 
                 }
                 coins -= quota;
@@ -359,12 +359,18 @@ namespace keijo
             StartLevel();
         }
 
-        public void GameOver()
+        public void GameOver(bool playerDied)
         {
             Debug.Log("Game Over");
             // show game over UI
             gameOverScreen.SetActive(true);
+            gameOverReason.text = playerDied ? "You died.." : "You couldn't pay the bills..";
+            
             // stop game from running
+            backgroundMusic.volume = 0;
+            dungeonBackground.volume = 0;
+            gameOverMusic.volume = 100;
+            gameOverMusic.Play();
             // thank the player
             // move to a diffrent scene?
         }

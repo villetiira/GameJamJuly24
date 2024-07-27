@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace keijo
@@ -18,7 +16,6 @@ namespace keijo
             base.RunCombatState();
 
             bool playerInSight = HasLineOfSight(targetPlayer.position, 100);
-            Debug.Log("in sight " + playerInSight);
 
             // if target is not lost
             if (playerInSight)

@@ -1396,14 +1396,14 @@ MonoBehaviour:
   walkSpeed: 3
   runSpeed: 7
   damage: 50
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 98fa4ae23e0cb954c8717f1a4dce2cc1, type: 3}
   idleSound1: {fileID: 0}
   idleSound2: {fileID: 0}
   angrySound: {fileID: 0}
   deathSound: {fileID: 0}
-  hitSound: {fileID: 0}
+  hitSound: {fileID: 8300000, guid: 32d3c160415e9d142b84256edb9825d5, type: 3}
   specialSound: {fileID: 0}
-  footStepSound: {fileID: 0}
+  footStepSound: {fileID: 8300000, guid: ef0e0063bfb54704b9d973f5ef01a99b, type: 3}
   currentState: 0
   attacking: 0
   targetPlayer: {fileID: 0}
@@ -1431,9 +1431,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1466,7 +1466,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
