@@ -3,6 +3,7 @@ using System;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 namespace keijo
 {
@@ -64,10 +65,11 @@ namespace keijo
         public TMP_Text interactTargetName;
         public Slider interactProgress;
         public UnityEvent<float> InteractProgress = new UnityEvent<float>();
+        EventSystem eventSys;
 
         // variables
         bool isGrounded = false;
-        bool daySwitching;
+        bool daySwitching = false;
 
         private void Awake()
         {
@@ -75,11 +77,11 @@ namespace keijo
             //initialize UI
             //armsAnimator = transform.Find("FirstPersonCamera").GetComponentInChildren<Animator>();
             animator = transform.Find("FullBody").GetComponentInChildren<Animator>();
+            eventSys = GameObject.Find("EventSystem").GetComponent<EventSystem>();
         }
 
         private void Start()
         {
-
             Cursor.lockState = CursorLockMode.Locked;
 
             // Tell camera to follow transform
@@ -97,7 +99,7 @@ namespace keijo
         void Update()
         {
             if (isDead || daySwitching) return;
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !eventSys.IsPointerOverGameObject())
             {
                 Cursor.lockState = CursorLockMode.Locked;
             }
@@ -128,6 +130,11 @@ namespace keijo
             if (interacting)
             {
                 Interacting();
+            }
+
+            if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
+            {
+                gameManager.Pause();
             }
 
             ShowInteractables();

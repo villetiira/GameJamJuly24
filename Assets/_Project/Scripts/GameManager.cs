@@ -42,12 +42,16 @@ namespace keijo
         public GameObject gameOverScreen;
         public TMP_Text gameOverReason;
         public GameObject dayStartingScreen;
+        public GameObject nextDayScreen;
+        public GameObject pauseMenu;
         public TMP_Text dayNumberDisplay;
         public TMP_Text currentCoins;
         public TMP_Text bills;
         public TMP_Text daysUntilBills;
         bool displayDayInfo = false;
         float dayInfoTimer = 5f;
+        bool dayStartingScreenActive = false;
+        float dayStartingScreenTimer = 2f;
 
         [Header("Audio")]
         public AudioSource backgroundMusic;
@@ -89,7 +93,19 @@ namespace keijo
                 dayInfoTimer -= Time.deltaTime;
                 if(dayInfoTimer < 0)
                 {
+                    displayDayInfo = false;
                     dayStartingScreen.SetActive(false);
+                }
+            }
+            if(dayStartingScreenActive)
+            {
+                dayStartingScreenTimer -= Time.deltaTime;
+                if(dayStartingScreenTimer < 0)
+                {
+                    dayStartingScreenActive = false;
+                    nextDayScreen.SetActive(false);
+                    dayStartingScreenTimer = 2f;
+                    player.LevelLoaded();
                 }
             }
         }
@@ -99,7 +115,6 @@ namespace keijo
             dayNumber++;
             roundNumber++;
             ShowDayInfo();
-            player.DaySwitched();
             levelRandom = new System.Random(seedGeneratorInt);
             levelSeed = levelRandom.Next(0, 100000000);
 
@@ -166,7 +181,6 @@ namespace keijo
                 SpawnItems();
 
                 SpawnEnemies();
-                player.LevelLoaded();
             }
         }
 
@@ -311,6 +325,19 @@ namespace keijo
             }
         }
 
+        public void Pause()
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        public void Unpause()
+        {
+            Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         public void EndDay()
         {
             // give bonus points for completing the task
@@ -356,6 +383,9 @@ namespace keijo
                 roundNumber = 0;
             }
             // if quota met, start next level
+            nextDayScreen.SetActive(true);
+            dayStartingScreenActive = true;
+            player.DaySwitched();
             StartLevel();
         }
 
@@ -365,7 +395,9 @@ namespace keijo
             // show game over UI
             gameOverScreen.SetActive(true);
             gameOverReason.text = playerDied ? "You died.." : "You couldn't pay the bills..";
-            
+
+            Cursor.lockState = CursorLockMode.None;
+
             // stop game from running
             backgroundMusic.volume = 0;
             dungeonBackground.volume = 0;
