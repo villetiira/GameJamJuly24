@@ -7,8 +7,10 @@ namespace keijo
     {
         public GameObject pauseMenu;
         public GameManager gameManager;
+        public GameObject loading;
         public void StartGame()
         {
+            if (loading) loading.SetActive(true);
             SceneManager.LoadScene("MainScene");
         }
 
