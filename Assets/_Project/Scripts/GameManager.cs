@@ -93,6 +93,7 @@ namespace keijo
         private void Start()
         {
             StartLevel();
+            Time.timeScale = 1;
         }
 
         private void Update()
@@ -453,6 +454,7 @@ namespace keijo
             gameOverReason.text = playerDied ? "You died.." : "You couldn't pay the bills..";
 
             Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0;
 
             // stop game from running
             backgroundMusic.volume = 0;
