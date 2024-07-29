@@ -48,10 +48,19 @@ namespace keijo
         public TMP_Text currentCoins;
         public TMP_Text bills;
         public TMP_Text daysUntilBills;
+        public GameObject saleUI;
+        public TMP_Text firstRow;
+        public TMP_Text secondRow;
+        public TMP_Text thirdRow;
+        public TMP_Text fourthRow;
+        public TMP_Text totalRow;
+        public TMP_Text currentCoinsUI;
         bool displayDayInfo = false;
         float dayInfoTimer = 5f;
         bool dayStartingScreenActive = false;
         float dayStartingScreenTimer = 2f;
+        bool saleUIActive = false;
+        float saleUIActiveTimer = 3f;
 
         [Header("Audio")]
         public AudioSource backgroundMusic;
@@ -62,15 +71,15 @@ namespace keijo
         public List<GameObject> enemies = new List<GameObject>();
 
         [Header("Item values")]
-        public int blueCapValue = 4;
-        public int glowBudValue = 10;
-        public int crystalValue = 18;
-        public int paleShroomValue = 8;
+        public int hotSauceValue = 20;
+        public int manaPotionValue = 30;
+        public int elixirOfProtectionValue = 40;
+        public int healthPotionValue = 30;
         public float taskBonus = 0.5f;
 
         [Header("Enemies")]
         public GameObject enemyPrefab;
-        public int enemyAmountAtStart = 1;
+        public int enemyAmountAtStart = 2;
 
         void Awake()
         {
@@ -106,6 +115,16 @@ namespace keijo
                     nextDayScreen.SetActive(false);
                     dayStartingScreenTimer = 2f;
                     player.LevelLoaded();
+                }
+            }
+            if(saleUIActive)
+            {
+                saleUIActiveTimer -= Time.deltaTime;
+                if (saleUIActiveTimer < 0)
+                {
+                    saleUIActive = false;
+                    saleUI.SetActive(false);
+                    saleUIActiveTimer = 3f;
                 }
             }
         }
@@ -145,14 +164,6 @@ namespace keijo
             int paleShroomCount = requiredMaterials - itemCount;
             itemCount += paleShroomCount;
 
-            Debug.Log("blueCapCount " + blueCapCount);
-            Debug.Log("glowBudCount " + glowBudCount);
-            Debug.Log("crystalCount " + crystalCount);
-            Debug.Log("paleShroom " + paleShroomCount);
-            Debug.Log("itemCount " + itemCount);
-
-            Debug.Log("test " + taskList.blueCapCount);
-
             // clear previous day
             taskList.blueCapCount = 0;
             taskList.glowBudCount = 0;
@@ -177,7 +188,6 @@ namespace keijo
         {
             if(status == GenerationStatus.Complete)
             {
-                Debug.Log("Triggered rebuild");
                 SpawnItems();
 
                 SpawnEnemies();
@@ -186,7 +196,6 @@ namespace keijo
 
         private void SpawnItems()
         {
-            Debug.Log("Spawning Items!");
             RandomLootSpawner[] spawnerList = FindObjectsByType<RandomLootSpawner>(0);
 
             Shuffle(spawnerList);
@@ -231,7 +240,6 @@ namespace keijo
                 item.transform.position = spawner.transform.position;
                 spawnedItems.Add(item);
             }
-            Debug.Log("Added items from tasklist " + spawnedItems.Count);
             // add some additional items too
             for(int i=0; i < requiredMaterials * 0.5; i++)
             {
@@ -271,33 +279,86 @@ namespace keijo
             }
         }
 
-        public void DeliverItems(int bluecaps, int glowbuds, int crystals, int paleShrooms)
+        public void DeliverItems(int hotSauce, int manaPotion, int elixirOfProtection, int healthPotion)
         {
-            Debug.Log("Received bluecaps:" + bluecaps);
-            Debug.Log("Received glowbuds:" + glowbuds);
-            Debug.Log("Received crystals:" + crystals);
-            Debug.Log("Received paleShrooms:" + paleShrooms);
 
             // update delivered items in tasklist
-            taskList.deliveredBlueCaps += bluecaps;
-            taskList.deliveredCrystals += crystals;
-            taskList.deliveredGlowBuds += glowbuds;
-            taskList.deliveredPaleShrooms += paleShrooms;
+            /*taskList.deliveredHotSauce += hotSauce;
+            taskList.deliveredManaPotion += manaPotion;
+            taskList.deliveredElixirOfProtection += elixirOfProtection;
+            taskList.deliveredHealthPotions += healthPotion;*/
+            firstRow.text = "";
+            secondRow.text = "";
+            thirdRow.text = "";
+            fourthRow.text = "";
+            totalRow.text = "";
+
+            int itemCount = 0;
+            if (hotSauce > 0)
+            {
+                firstRow.text = "Hot Sauce: " + hotSauce + " x " + hotSauceValue;
+                itemCount++;
+            }
+            if (manaPotion > 0)
+            {
+                if(itemCount == 1)
+                {
+                    secondRow.text = "Mana Potion: " + manaPotion + " x " + manaPotionValue;
+                }
+                else
+                {
+                    firstRow.text = "Mana Potion: " + manaPotion + " x " + manaPotionValue;
+                }
+                itemCount++;
+            }
+            if (elixirOfProtection > 0)
+            {
+                if(itemCount == 2)
+                {
+                    thirdRow.text = "Elixir of Protection: " + elixirOfProtection + " x " + elixirOfProtectionValue;
+                }
+                if (itemCount == 1)
+                {
+                    secondRow.text = "Elixir of Protection: " + elixirOfProtection + " x " + elixirOfProtectionValue;
+                }
+                else
+                {
+                    firstRow.text = "Elixir of Protection: " + elixirOfProtection + " x " + elixirOfProtectionValue;
+                }
+                itemCount++;
+            }
+            if (healthPotion > 0)
+            {
+                if (itemCount == 3)
+                {
+                    fourthRow.text = "Health Potion: " + healthPotion + " x " + healthPotionValue;
+                }
+                if (itemCount == 2)
+                {
+                    thirdRow.text = "Health Potion: " + healthPotion + " x " + healthPotionValue;
+                }
+                if (itemCount == 1)
+                {
+                    secondRow.text = "Health Potion: " + healthPotion + " x " + healthPotionValue;
+                }
+                else
+                {
+                    firstRow.text = "Health Potion: " + healthPotion + " x " + healthPotionValue;
+                }
+            }
 
             // give coins to player
-            int reward = bluecaps * blueCapValue;
-            reward += glowbuds * glowBudValue;
-            reward += crystals * crystalValue;
-            reward += paleShrooms * paleShroomValue;
-
+            int reward = hotSauce * hotSauceValue;
+            reward += manaPotion * manaPotionValue;
+            reward += elixirOfProtection * elixirOfProtectionValue;
+            reward += healthPotion * healthPotionValue;
             coins += reward;
-            Debug.Log("coins :" + coins);
-            Debug.Log("quota :" + quota);
 
-            // update UI
-            // show received coins
+            totalRow.text = "Total: " + reward;
+            currentCoinsUI.text = "Current Coins: " + coins;
 
-            // show a little text to the player that they've finished their tasks and could end the day
+            saleUI.SetActive(true);
+            saleUIActive = true;
         }
 
         private void SpawnEnemies()
@@ -341,32 +402,28 @@ namespace keijo
         public void EndDay()
         {
             // give bonus points for completing the task
-            int bonus = 0;
+            /*int bonus = 0;
             if (taskList.deliveredBlueCaps >= taskList.blueCapCount) bonus += (int) Mathf.Floor(taskList.blueCapCount * blueCapValue * taskBonus);
             if (taskList.deliveredCrystals >= taskList.crystalCount) bonus += (int) Mathf.Floor(taskList.crystalCount * crystalValue * taskBonus);
             if (taskList.deliveredGlowBuds >= taskList.glowBudCount) bonus += (int) Mathf.Floor(taskList.glowBudCount * glowBudValue * taskBonus);
             if (taskList.deliveredPaleShrooms >= taskList.paleShroomCount) bonus += (int) Mathf.Floor(taskList.paleShroomCount * paleShroomValue * taskBonus);
-            coins += bonus;
+            coins += bonus;*/
 
             // show bonus
-            Debug.Log("Bonus! " + bonus);
+           // Debug.Log("Bonus! " + bonus);
 
             // destroy leftover items and enemies
             foreach (GameObject item in spawnedItems)
             {
-                Debug.Log(item);
                 Destroy(item);
             }
-            Debug.Log(spawnedItems.Count);
             spawnedItems.Clear();
-            Debug.Log(spawnedItems.Count);
 
             foreach (GameObject enemy in enemies)
             {
                 if (enemy != null) Destroy(enemy);
             }
             enemies.Clear();
-            Debug.Log(enemies.Count);
 
             if (roundNumber == 3)
             {
@@ -391,7 +448,6 @@ namespace keijo
 
         public void GameOver(bool playerDied)
         {
-            Debug.Log("Game Over");
             // show game over UI
             gameOverScreen.SetActive(true);
             gameOverReason.text = playerDied ? "You died.." : "You couldn't pay the bills..";

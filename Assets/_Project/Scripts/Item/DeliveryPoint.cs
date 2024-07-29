@@ -15,15 +15,14 @@ namespace keijo {
         public override void Interact(GameObject player)
         {
             Inventory inventory = player.GetComponent<Inventory>();
-            int blueCaps = inventory.blueCaps;
-            int glowBuds = inventory.glowBuds;
-            int crystals = inventory.crystals;
-            int paleShrooms = inventory.paleShrooms;
+
+            int hotSauce = inventory.hotSauce;
+            int manaPotion = inventory.manaPotion;
+            int elixirOfProtection = inventory.elixirOfProtection;
+            int healthPotion = inventory.healthPotion;
             inventory.ClearInventory();
 
-            Debug.Log("Delivered mushrooms: " + blueCaps);
-
-            gameManager.DeliverItems(blueCaps, glowBuds, crystals, paleShrooms);
+            gameManager.DeliverItems(hotSauce, manaPotion, elixirOfProtection, healthPotion);
         }
     }
 }
